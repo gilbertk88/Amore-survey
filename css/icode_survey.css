@@ -1,0 +1,178 @@
+.ui-tooltip {
+	max-width: 500px !important;
+}
+.ui-tooltip-content {
+	max-width: 500px !important;
+}
+.mlw_icode_hint_link {
+	text-decoration:underline;
+	color:rgb(0,0,255);
+}
+.mlw_icode_survey_link {
+	display: inline;
+	vertical-align:top !important;
+	text-decoration: none;
+}
+.survey_section.active{
+	display: none;
+}
+/*edit plugin*/
+.iCODE-survey-container {
+    width: 60% !important;
+    margin: 0 auto;
+}
+.icode_survey_container .icode_pagination{
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+}
+.icode_survey_container .icode_pagination input.iCODE-btn.iCODE-submit-btn.icode_btn{
+    background: #545366;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 2px;
+    width:100%;
+    width: 400px;
+    line-height: 40px;
+}
+.survey_section.survey_begin{
+    display: none;
+}
+div#iCODE-progress-bar{
+    display: none !important;
+}
+.icode_survey_container .icode_pagination{
+    display: block !important;
+}
+.iCODE-survey-container {
+    width: max-content;
+    margin: 0 auto;
+}
+.icode_mc_answer_wrap {
+    float: left;
+    width: auto;
+    color: #364b5c;
+    margin-right:10px;
+    margin-bottom: 5px;
+}
+strong.Icode-title{
+    font-size: 20px;
+    background-color: #545366;
+    color: #fff;
+    padding: 0px 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border: 0px solid #c5c5d8;
+    border-radius: 5px;
+}
+input.next_text{
+    background: #545366;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 2px;
+    width:100%;
+    width:150%;
+    margin-left: -25%;
+    line-height: 40px;
+}
+
+.survey_section {
+    clear: both;
+}
+.icode_mc_answer_wrap input[type="checkbox"],.icode_mc_answer_wrap input[type="radio"]{
+    -webkit-appearance: none;
+    display: none;
+}
+.icode_mc_answer_wrap input[type="checkbox"]+label,.icode_mc_answer_wrap input[type="radio"]+label{
+    border: 1px solid gray;
+    padding:3px 5px;
+    border-radius: 4px;
+}
+.icode_mc_answer_wrap input[type="radio"]:checked+label, .icode_mc_answer_wrap input[type="checkbox"]:checked+label{
+    border: 2px solid rgb(0, 0, 0);
+}
+section.iCODE-page{
+    overflow: auto;
+    margin-bottom: 5px;
+    padding-left: 25%;
+}
+.w-tabs-list-h{
+    width:max-content;
+    margin:0 auto;
+}
+.w-tabs-list {
+    background: none !important;
+}
+.w-tabs-item {
+    padding: 5px;
+    border: none !important;
+    border: 1px #b3b3b3 solid !important;
+    border-radius: 5px;
+    margin-left: 2px;
+    cursor: pointer;
+    margin:0 65px;
+}
+.w-tabs-item.active{
+    border: none;
+    background:none !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+.w-tabs-item a{
+    padding:0 44px;
+}
+.tab-survey{
+    background: url(https://www.amorebeds.com/wp-content/themes/Impreza-child/images/8868.png) !important;
+    background-size: 100% 100% !important;
+    background-size: 70% 100% !important;
+    background-position-x: 50% !important;
+    background-repeat: no-repeat !important;
+    padding: 50px 0;
+}
+.iCODE_contact_div.iCODE-contact-type-text{
+    display: none;
+}
+.iCODE_contact_div.iCODE-contact-type-email{
+    display: none;
+}
+section.iCODE-page-2 {
+    width: 50%;
+    float: left;
+}
+.left-people,
+.right-people{
+	display: none;
+	float: left;
+	width:50%;
+    text-align: left !important; 
+}
+.thank-you{
+	display: none;
+}
+.left-people.active,
+.right-people.active,
+.thank-you.active{
+	display: block;
+}
+div#signup_form.active{
+	display: none;
+}
+
+@media (max-width:575px){
+    .tab-survey{
+        background-size: 100% 100% !important;
+    }
+    section.iCODE-page-2{
+        width:100%;
+    }
+    .iCODE-survey-container{
+        width:100% !important;
+    }
+}
+
+
+
+

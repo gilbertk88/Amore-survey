@@ -1,8 +1,12 @@
 <?php 
 function  admin_amoresurvey(){ ?>
+
 <br><br>
-<div class=”wrap”>
+
+<div class=ï¿½wrapï¿½>
+
 <h2>Amore Mattress Survey Results</h2>
+
 <p>On this page, you see the results of Amore Mattress Surveys taken.</p><br>
 	
 	<style>

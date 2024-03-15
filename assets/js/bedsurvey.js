@@ -1,21 +1,23 @@
 jQuery( function ( $ ) {
+
 function start_survey(e){
 	
-	q1=q2=q3=q4=q5=0;
-		q6=1;
-		p1=1;
-		a=null;
+	q1 = q2 = q3 = q4 = q5 = 0 ;
+	q6=1;
+	p1=1;
+	a=null;
 
 	// allocate variables
-		Aa='';
-		Ba='';
-		ans2='';
-		ans1='';
+	Aa = '';
+	Ba = '';
+	ans2 = '';
+	ans1 = '';
 
-		$("#user_data_s_r1").val('');
-		$("#ans1").val('');		
-		$("#user_data_s_r2").val('');
-		$("#ans2").val('');		
+	$("#user_data_s_r1").val('') ;
+	$("#ans1").val('') ;
+	$("#user_data_s_r2").val('') ;
+	$("#ans2").val('') ;
+
 }
 
 $('#survey_close').click(function(){
@@ -24,17 +26,17 @@ $('#survey_close').click(function(){
 	});
 	
 $('#p1').click(function(){ 
-	$('#p1').css({border:'2px solid #000000'});
-	$('#p2').css({border:'1px solid gray'});
-	$('.1person').show('slow').css({display:'block'});
-	$('.person').hide('slow');
+	$('#p1').css({border:'1px solid #323232'});
+	$('#p2').css({border:'1px solid #fff'});
+	$('.1person').show();
+	$('.person').hide();
 	p1=1
 	});
 $('#p2').click(function(){ 
-	$('#p2').css({border:'2px solid #000000'});
-	$('#p1').css({border:'1px solid gray'});
-	$('.person').show('slow').css({display:'block'});
-	$('.1person').hide('slow');
+	$('#p2').css({border:'1px solid #323232'});
+	$('#p1').css({border:'1px solid #fff'});
+	$('.person').show();
+	$('.1person').hide();
 	p1=2;
 	Aq1=Aq2=Aq3=Aq4=Aq5=Bq1=Bq2=Bq3=Bq4=Bq5=0;
 	Aq6=Bq6=1;
@@ -46,32 +48,32 @@ $('#p2').click(function(){
 function oneperson() {	
 // question 1
 	//color
-	$('#q1s').click(function(){ 
-	$('#q1s').css({border:'2px solid #000000'});
-	$('#q1m').css({border:'1px solid gray'});
-	$('#q1f').css({border:'1px solid gray'});
-	$('#q1null').css({border:'1px solid gray'});
+	$('#q1s').click(function(){
+	$('#q1s').css({border:'1px solid #323232'});
+	$('#q1m').css({border:'1px solid #fff'});
+	$('#q1f').css({border:'1px solid #fff'});
+	$('#q1null').css({border:'1px solid #fff'});
 	q1=2;
 	});
 	$('#q1m').click(function(){ 
-	$('#q1m').css({border:'2px solid #000000'});
-	$('#q1s').css({border:'1px solid gray'});
-	$('#q1f').css({border:'1px solid gray'});
-	$('#q1null').css({border:'1px solid gray'});
+	$('#q1m').css({border:'1px solid #323232'});
+	$('#q1s').css({border:'1px solid #fff'});
+	$('#q1f').css({border:'1px solid #fff'});
+	$('#q1null').css({border:'1px solid #fff'});
 	q1=4;
 	});
 	$('#q1null').click(function(){ 
-	$('#q1null').css({border:'2px solid #000000'});
-	$('#q1s').css({border:'1px solid gray'});
-	$('#q1f').css({border:'1px solid gray'});
-	$('#q1m').css({border:'1px solid gray'});
+	$('#q1null').css({border:'1px solid #323232'});
+	$('#q1s').css({border:'1px solid #fff'});
+	$('#q1f').css({border:'1px solid #fff'});
+	$('#q1m').css({border:'1px solid #fff'});
 	q1=4;
 	});
 	$('#q1f').click(function(){ 
-	$('#q1f').css({border:'2px solid #000000'});
-	$('#q1m').css({border:'1px solid gray'});
-	$('#q1s').css({border:'1px solid gray'});
-	$('#q1null').css({border:'1px solid gray'});
+	$('#q1f').css({border:'1px solid #323232'});
+	$('#q1m').css({border:'1px solid #fff'});
+	$('#q1s').css({border:'1px solid #fff'});
+	$('#q1null').css({border:'1px solid #fff'});
 	q1=6;
 	});
 	//value
@@ -80,31 +82,31 @@ function oneperson() {
 	//color
 	//value
 $('#q2b').click(function(){ 
-	$('#q2b').css({border:'2px solid #000000'});
-	$('#q2s').css({border:'1px solid gray'});
-	$('#q2si').css({border:'1px solid gray'});
-	$('#q2a').css({border:'1px solid gray'});
+	$('#q2b').css({border:'1px solid #323232'});
+	$('#q2s').css({border:'1px solid #fff'});
+	$('#q2si').css({border:'1px solid #fff'});
+	$('#q2a').css({border:'1px solid #fff'});
 	q2=2;
 	});	
 $('#q2s').click(function(){ 
-	$('#q2s').css({border:'2px solid #000000'});
-	$('#q2b').css({border:'1px solid gray'});
-	$('#q2si').css({border:'1px solid gray'});
-	$('#q2a').css({border:'1px solid gray'});
+	$('#q2s').css({border:'1px solid #323232'});
+	$('#q2b').css({border:'1px solid #fff'});
+	$('#q2si').css({border:'1px solid #fff'});
+	$('#q2a').css({border:'1px solid #fff'});
 	q2=3;
 	});
 $('#q2si').click(function(){ 
-	$('#q2si').css({border:'2px solid #000000'});
-	$('#q2s').css({border:'1px solid gray'});
-	$('#q2b').css({border:'1px solid gray'});
-	$('#q2a').css({border:'1px solid gray'});
+	$('#q2si').css({border:'1px solid #323232'});
+	$('#q2s').css({border:'1px solid #fff'});
+	$('#q2b').css({border:'1px solid #fff'});
+	$('#q2a').css({border:'1px solid #fff'});
 	q2=1;
 	});
 $('#q2a').click(function(){ 
-	$('#q2a').css({border:'2px solid #000000'});
-	$('#q2s').css({border:'1px solid gray'});
-	$('#q2si').css({border:'1px solid gray'});
-	$('#q2b').css({border:'1px solid gray'});
+	$('#q2a').css({border:'1px solid #000000'});
+	$('#q2s').css({border:'1px solid #fff'});
+	$('#q2si').css({border:'1px solid #fff'});
+	$('#q2b').css({border:'1px solid #fff'});
 	q2=2;
 	});
 
@@ -113,21 +115,21 @@ $('#q2a').click(function(){
 	//color
 	//value
 	$('#q3s').click(function(){ 
-	$('#q3s').css({border:'2px solid #000000'});
-	$('#q3a').css({border:'1px solid gray'});
-	$('#q3l').css({border:'1px solid gray'});
+	$('#q3s').css({border:'1px solid #323232'});
+	$('#q3a').css({border:'1px solid #fff'});
+	$('#q3l').css({border:'1px solid #fff'});
 	q3=1;
 	});
 		$('#q3a').click(function(){ 
-	$('#q3a').css({border:'2px solid #000000'});
-	$('#q3s').css({border:'1px solid gray'});
-	$('#q3l').css({border:'1px solid gray'});
+	$('#q3a').css({border:'1px solid #323232'});
+	$('#q3s').css({border:'1px solid #fff'});
+	$('#q3l').css({border:'1px solid #fff'});
 	q3=2;
 	});
 	$('#q3l').click(function(){ 
-	$('#q3l').css({border:'2px solid #000000'});
-	$('#q3a').css({border:'1px solid gray'});
-	$('#q3s').css({border:'1px solid gray'});
+	$('#q3l').css({border:'1px solid #323232'});
+	$('#q3a').css({border:'1px solid #fff'});
+	$('#q3s').css({border:'1px solid #fff'});
 	q3=3;
 	});
 	
@@ -135,21 +137,21 @@ $('#q2a').click(function(){
 	//color
 	//value
 	$('#q4s').click(function(){ 
-	$('#q4s').css({border:'2px solid #000000'});
-	$('#q4a').css({border:'1px solid gray'});
-	$('#q4l').css({border:'1px solid gray'});
+	$('#q4s').css({border:'1px solid #323232'});
+	$('#q4a').css({border:'1px solid #fff'});
+	$('#q4l').css({border:'1px solid #fff'});
 	q4=1;
 	});
 	$('#q4a').click(function(){ 
-	$('#q4a').css({border:'2px solid #000000'});
-	$('#q4s').css({border:'1px solid gray'});
-	$('#q4l').css({border:'1px solid gray'});
+	$('#q4a').css({border:'1px solid #323232'});
+	$('#q4s').css({border:'1px solid #fff'});
+	$('#q4l').css({border:'1px solid #fff'});
 	q4=2;
 	});
 	$('#q4l').click(function(){ 
-	$('#q4l').css({border:'2px solid #000000'});
-	$('#q4a').css({border:'1px solid gray'});
-	$('#q4s').css({border:'1px solid gray'});
+	$('#q4l').css({border:'1px solid #323232'});
+	$('#q4a').css({border:'1px solid #fff'});
+	$('#q4s').css({border:'1px solid #fff'});
 	q4=3;
 	});
 	
@@ -157,36 +159,36 @@ $('#q2a').click(function(){
 	//color
 	//value
 	$('#q5s').click(function(){ 
-	$('#q5s').css({border:'2px solid #000000'});
-	$('#q5a').css({border:'1px solid gray'});
-	$('#q5l').css({border:'1px solid gray'});
+	$('#q5s').css({border:'1px solid #323232'});
+	$('#q5a').css({border:'1px solid #fff'});
+	$('#q5l').css({border:'1px solid #fff'});
 	q5=1;
 	});
 	$('#q5a').click(function(){ 
-	$('#q5a').css({border:'2px solid #000000'});
-	$('#q5s').css({border:'1px solid gray'});
-	$('#q5l').css({border:'1px solid gray'});
+	$('#q5a').css({border:'1px solid #323232'});
+	$('#q5s').css({border:'1px solid #fff'});
+	$('#q5l').css({border:'1px solid #fff'});
 	q5=2;
 	});
 	$('#q5l').click(function(){ 
-	$('#q5l').css({border:'2px solid #000000'});
-	$('#q5a').css({border:'1px solid gray'});
-	$('#q5s').css({border:'1px solid gray'});
+	$('#q5l').css({border:'1px solid #323232'});
+	$('#q5a').css({border:'1px solid #fff'});
+	$('#q5s').css({border:'1px solid #fff'});
 	q5=3;
 	});
 // question 6
 	//color
 	//value
 	$('#q6s').click(function(){ 
-	$('#q6s').css({border:'2px solid #000000'});
-	$('#q6a').css({border:'1px solid gray'});
-	$('#q6l').css({border:'1px solid gray'});
+	$('#q6s').css({border:'1px solid #323232'});
+	$('#q6a').css({border:'1px solid #fff'});
+	$('#q6l').css({border:'1px solid #fff'});
 	q6=1;
 	});
 	$('#q6a').click(function(){ 
-	$('#q6a').css({border:'2px solid #000000'});
-	$('#q6s').css({border:'1px solid gray'});
-	$('#q6l').css({border:'1px solid gray'});
+	$('#q6a').css({border:'1px solid #323232'});
+	$('#q6s').css({border:'1px solid #fff'});
+	$('#q6l').css({border:'1px solid #fff'});
 	q6=2;
 	});	
 }
@@ -199,31 +201,31 @@ function twopeople() {
 // question 1
 	//color
 	$('#Aq1s').click(function(){ 
-	$('#Aq1s').css({border:'2px solid #000000'});
-	$('#Aq1m').css({border:'1px solid gray'});
-	$('#Aq1f').css({border:'1px solid gray'});
-	$('#Aq1null').css({border:'1px solid gray'});
+	$('#Aq1s').css({border:'1px solid #323232'});
+	$('#Aq1m').css({border:'1px solid #fff'});
+	$('#Aq1f').css({border:'1px solid #fff'});
+	$('#Aq1null').css({border:'1px solid #fff'});
 	Aq1=1*2;
 	});
 	$('#Aq1m').click(function(){ 
-	$('#Aq1m').css({border:'2px solid #000000'});
-	$('#Aq1s').css({border:'1px solid gray'});
-	$('#Aq1f').css({border:'1px solid gray'});
-	$('#Aq1null').css({border:'1px solid gray'});
+	$('#Aq1m').css({border:'1px solid #323232'});
+	$('#Aq1s').css({border:'1px solid #fff'});
+	$('#Aq1f').css({border:'1px solid #fff'});
+	$('#Aq1null').css({border:'1px solid #fff'});
 	Aq1=2*2;
 	});
 	$('#Aq1null').click(function(){ 
-	$('#Aq1null').css({border:'2px solid #000000'});
-	$('#Aq1s').css({border:'1px solid gray'});
-	$('#Aq1f').css({border:'1px solid gray'});
-	$('#Aq1m').css({border:'1px solid gray'});
+	$('#Aq1null').css({border:'1px solid #323232'});
+	$('#Aq1s').css({border:'1px solid #fff'});
+	$('#Aq1f').css({border:'1px solid #fff'});
+	$('#Aq1m').css({border:'1px solid #fff'});
 	Aq1=2*2;
 	});
 	$('#Aq1f').click(function(){ 
-	$('#Aq1f').css({border:'2px solid #000000'});
-	$('#Aq1m').css({border:'1px solid gray'});
-	$('#Aq1s').css({border:'1px solid gray'});
-	$('#Aq1null').css({border:'1px solid gray'});
+	$('#Aq1f').css({border:'1px solid #323232'});
+	$('#Aq1m').css({border:'1px solid #fff'});
+	$('#Aq1s').css({border:'1px solid #fff'});
+	$('#Aq1null').css({border:'1px solid #fff'});
 	Aq1=3*2;
 	});
 	//value
@@ -232,31 +234,31 @@ function twopeople() {
 	//color
 	//value
 $('#Aq2b').click(function(){ 
-	$('#Aq2b').css({border:'2px solid #000000'});
-	$('#Aq2s').css({border:'1px solid gray'});
-	$('#Aq2si').css({border:'1px solid gray'});
-	$('#Aq2a').css({border:'1px solid gray'});
+	$('#Aq2b').css({border:'1px solid #323232'});
+	$('#Aq2s').css({border:'1px solid #fff'});
+	$('#Aq2si').css({border:'1px solid #fff'});
+	$('#Aq2a').css({border:'1px solid #fff'});
 	Aq2=2;
 	});	
 $('#Aq2s').click(function(){ 
-	$('#Aq2s').css({border:'2px solid #000000'});
-	$('#Aq2b').css({border:'1px solid gray'});
-	$('#Aq2si').css({border:'1px solid gray'});
-	$('#Aq2a').css({border:'1px solid gray'});
+	$('#Aq2s').css({border:'1px solid #323232'});
+	$('#Aq2b').css({border:'1px solid #fff'});
+	$('#Aq2si').css({border:'1px solid #fff'});
+	$('#Aq2a').css({border:'1px solid #fff'});
 	Aq2=3;
 	});
 $('#Aq2si').click(function(){ 
-	$('#Aq2si').css({border:'2px solid #000000'});
-	$('#Aq2s').css({border:'1px solid gray'});
-	$('#Aq2b').css({border:'1px solid gray'});
-	$('#Aq2a').css({border:'1px solid gray'});
+	$('#Aq2si').css({border:'1px solid #323232'});
+	$('#Aq2s').css({border:'1px solid #fff'});
+	$('#Aq2b').css({border:'1px solid #fff'});
+	$('#Aq2a').css({border:'1px solid #fff'});
 	Aq2=1;
 	});
 $('#Aq2a').click(function(){ 
-	$('#Aq2a').css({border:'2px solid #000000'});
-	$('#Aq2s').css({border:'1px solid gray'});
-	$('#Aq2si').css({border:'1px solid gray'});
-	$('#Aq2b').css({border:'1px solid gray'});
+	$('#Aq2a').css({border:'1px solid #323232'});
+	$('#Aq2s').css({border:'1px solid #fff'});
+	$('#Aq2si').css({border:'1px solid #fff'});
+	$('#Aq2b').css({border:'1px solid #fff'});
 	Aq2=2;
 	});
 	
@@ -265,21 +267,21 @@ $('#Aq2a').click(function(){
 	//color
 	//value
 	$('#Aq3s').click(function(){ 
-	$('#Aq3s').css({border:'2px solid #000000'});
-	$('#Aq3a').css({border:'1px solid gray'});
-	$('#Aq3l').css({border:'1px solid gray'});
+	$('#Aq3s').css({border:'1px solid #323232'});
+	$('#Aq3a').css({border:'1px solid #fff'});
+	$('#Aq3l').css({border:'1px solid #fff'});
 	Aq3=1;
 	});
 	$('#Aq3a').click(function(){ 
-	$('#Aq3a').css({border:'2px solid #000000'});
-	$('#Aq3s').css({border:'1px solid gray'});
-	$('#Aq3l').css({border:'1px solid gray'});
+	$('#Aq3a').css({border:'1px solid #323232'});
+	$('#Aq3s').css({border:'1px solid #fff'});
+	$('#Aq3l').css({border:'1px solid #fff'});
 	Aq3=2;
 	});
 	$('#Aq3l').click(function(){ 
-	$('#Aq3l').css({border:'2px solid #000000'});
-	$('#Aq3a').css({border:'1px solid gray'});
-	$('#Aq3s').css({border:'1px solid gray'});
+	$('#Aq3l').css({border:'1px solid #323232'});
+	$('#Aq3a').css({border:'1px solid #fff'});
+	$('#Aq3s').css({border:'1px solid #fff'});
 	Aq3=3;
 	});
 	
@@ -287,57 +289,57 @@ $('#Aq2a').click(function(){
 	//color
 	//value
 	$('#Aq4s').click(function(){ 
-	$('#Aq4s').css({border:'2px solid #000000'});
-	$('#Aq4a').css({border:'1px solid gray'});
-	$('#Aq4l').css({border:'1px solid gray'});
+	$('#Aq4s').css({border:'1px solid #323232'});
+	$('#Aq4a').css({border:'1px solid #fff'});
+	$('#Aq4l').css({border:'1px solid #fff'});
 	Aq4=1;
 	});
 	$('#Aq4a').click(function(){ 
-	$('#Aq4a').css({border:'2px solid #000000'});
-	$('#Aq4s').css({border:'1px solid gray'});
-	$('#Aq4l').css({border:'1px solid gray'});
+	$('#Aq4a').css({border:'1px solid #323232'});
+	$('#Aq4s').css({border:'1px solid #fff'});
+	$('#Aq4l').css({border:'1px solid #fff'});
 	Aq4=2;
 	});
 	$('#Aq4l').click(function(){ 
-	$('#Aq4l').css({border:'2px solid #000000'});
-	$('#Aq4a').css({border:'1px solid gray'});
-	$('#Aq4s').css({border:'1px solid gray'});
+	$('#Aq4l').css({border:'1px solid #323232'});
+	$('#Aq4a').css({border:'1px solid #fff'});
+	$('#Aq4s').css({border:'1px solid #fff'});
 	Aq4=3;
 	});
 // question 5
 	//color
 	//value
 	$('#Aq5s').click(function(){ 
-	$('#Aq5s').css({border:'2px solid #000000'});
-	$('#Aq5a').css({border:'1px solid gray'});
-	$('#Aq5l').css({border:'1px solid gray'});
+	$('#Aq5s').css({border:'1px solid #323232'});
+	$('#Aq5a').css({border:'1px solid #fff'});
+	$('#Aq5l').css({border:'1px solid #fff'});
 	Aq5=1;
 	});
 	$('#Aq5a').click(function(){ 
-	$('#Aq5a').css({border:'2px solid #000000'});
-	$('#Aq5s').css({border:'1px solid gray'});
-	$('#Aq5l').css({border:'1px solid gray'});
+	$('#Aq5a').css({border:'1px solid #323232'});
+	$('#Aq5s').css({border:'1px solid #fff'});
+	$('#Aq5l').css({border:'1px solid #fff'});
 	Aq5=2;
 	});
 	$('#Aq5l').click(function(){ 
-	$('#Aq5l').css({border:'2px solid #000000'});
-	$('#Aq5a').css({border:'1px solid gray'});
-	$('#Aq5s').css({border:'1px solid gray'});
+	$('#Aq5l').css({border:'1px solid #323232'});
+	$('#Aq5a').css({border:'1px solid #fff'});
+	$('#Aq5s').css({border:'1px solid #fff'});
 	Aq5=3;
 	});
 // question 6
 	//color
 	//value
 	$('#Aq6s').click(function(){ 
-	$('#Aq6s').css({border:'2px solid #000000'});
-	$('#Aq6a').css({border:'1px solid gray'});
-	$('#Aq6l').css({border:'1px solid gray'});
+	$('#Aq6s').css({border:'1px solid #323232'});
+	$('#Aq6a').css({border:'1px solid #fff'});
+	$('#Aq6l').css({border:'1px solid #fff'});
 	Aq6=1;
 	});
 	$('#Aq6a').click(function(){ 
-	$('#Aq6a').css({border:'2px solid #000000'});
-	$('#Aq6s').css({border:'1px solid gray'});
-	$('#Aq6l').css({border:'1px solid gray'});
+	$('#Aq6a').css({border:'1px solid #323232'});
+	$('#Aq6s').css({border:'1px solid #fff'});
+	$('#Aq6l').css({border:'1px solid #fff'});
 	Aq6=2;
 	});
 	
@@ -346,31 +348,31 @@ $('#Aq2a').click(function(){
 // question 1
 	//color
 	$('#Bq1s').click(function(){ 
-	$('#Bq1s').css({border:'2px solid #000000'});
-	$('#Bq1m').css({border:'1px solid gray'});
-	$('#Bq1f').css({border:'1px solid gray'});
-	$('#Bq1null').css({border:'1px solid gray'});
+	$('#Bq1s').css({border:'1px solid #323232'});
+	$('#Bq1m').css({border:'1px solid #fff'});
+	$('#Bq1f').css({border:'1px solid #fff'});
+	$('#Bq1null').css({border:'1px solid #fff'});
 	Bq1=1*2;
 	});
 	$('#Bq1m').click(function(){ 
-	$('#Bq1m').css({border:'2px solid #000000'});
-	$('#Bq1s').css({border:'1px solid gray'});
-	$('#Bq1f').css({border:'1px solid gray'});
-	$('#Bq1null').css({border:'1px solid gray'});
+	$('#Bq1m').css({border:'1px solid #323232'});
+	$('#Bq1s').css({border:'1px solid #fff'});
+	$('#Bq1f').css({border:'1px solid #fff'});
+	$('#Bq1null').css({border:'1px solid #fff'});
 	Bq1=2*2;
 	});
 	$('#Bq1null').click(function(){ 
-	$('#Bq1null').css({border:'2px solid #000000'});
-	$('#Bq1s').css({border:'1px solid gray'});
-	$('#Bq1f').css({border:'1px solid gray'});
-	$('#Bq1m').css({border:'1px solid gray'});
+	$('#Bq1null').css({border:'1px solid #323232'});
+	$('#Bq1s').css({border:'1px solid #fff'});
+	$('#Bq1f').css({border:'1px solid #fff'});
+	$('#Bq1m').css({border:'1px solid #fff'});
 	Bq1=2*2;
 	});
 	$('#Bq1f').click(function(){ 
-	$('#Bq1f').css({border:'2px solid #000000'});
-	$('#Bq1m').css({border:'1px solid gray'});
-	$('#Bq1s').css({border:'1px solid gray'});
-	$('#Bq1null').css({border:'1px solid gray'});
+	$('#Bq1f').css({border:'1px solid #323232'});
+	$('#Bq1m').css({border:'1px solid #fff'});
+	$('#Bq1s').css({border:'1px solid #fff'});
+	$('#Bq1null').css({border:'1px solid #fff'});
 	Bq1=3*2;
 	});
 	//value
@@ -378,109 +380,109 @@ $('#Aq2a').click(function(){
 	//color
 	//value
 $('#Bq2b').click(function(){ 
-	$('#Bq2b').css({border:'2px solid #000000'});
-	$('#Bq2s').css({border:'1px solid gray'});
-	$('#Bq2si').css({border:'1px solid gray'});
-	$('#Bq2a').css({border:'1px solid gray'});
+	$('#Bq2b').css({border:'1px solid #323232'});
+	$('#Bq2s').css({border:'1px solid #fff'});
+	$('#Bq2si').css({border:'1px solid #fff'});
+	$('#Bq2a').css({border:'1px solid #fff'});
 	Bq2=2;
 	});	
 $('#Bq2s').click(function(){ 
-	$('#Bq2s').css({border:'2px solid #000000'});
-	$('#Bq2b').css({border:'1px solid gray'});
-	$('#Bq2si').css({border:'1px solid gray'});
-	$('#Bq2a').css({border:'1px solid gray'});
+	$('#Bq2s').css({border:'1px solid #323232'});
+	$('#Bq2b').css({border:'1px solid #fff'});
+	$('#Bq2si').css({border:'1px solid #fff'});
+	$('#Bq2a').css({border:'1px solid #fff'});
 	Bq2=3;
 	});
 $('#Bq2si').click(function(){ 
-	$('#Bq2si').css({border:'2px solid #000000'});
-	$('#Bq2s').css({border:'1px solid gray'});
-	$('#Bq2b').css({border:'1px solid gray'});
-	$('#Bq2a').css({border:'1px solid gray'});
+	$('#Bq2si').css({border:'1px solid #323232'});
+	$('#Bq2s').css({border:'1px solid #fff'});
+	$('#Bq2b').css({border:'1px solid #fff'});
+	$('#Bq2a').css({border:'1px solid #fff'});
 	Bq2=1;
 	});
 $('#Bq2a').click(function(){ 
-	$('#Bq2a').css({border:'2px solid #000000'});
-	$('#Bq2s').css({border:'1px solid gray'});
-	$('#Bq2si').css({border:'1px solid gray'});
-	$('#Bq2b').css({border:'1px solid gray'});
+	$('#Bq2a').css({border:'1px solid #323232'});
+	$('#Bq2s').css({border:'1px solid #fff'});
+	$('#Bq2si').css({border:'1px solid #fff'});
+	$('#Bq2b').css({border:'1px solid #fff'});
 	Bq2=2;
 	});
 // question 3
 	//color
 	//value
 	$('#Bq3s').click(function(){ 
-	$('#Bq3s').css({border:'2px solid #000000'});
-	$('#Bq3a').css({border:'1px solid gray'});
-	$('#Bq3l').css({border:'1px solid gray'});
+	$('#Bq3s').css({border:'1px solid #323232'});
+	$('#Bq3a').css({border:'1px solid #fff'});
+	$('#Bq3l').css({border:'1px solid #fff'});
 	Bq3=1;
 	});
 	$('#Bq3a').click(function(){ 
-	$('#Bq3a').css({border:'2px solid #000000'});
-	$('#Bq3s').css({border:'1px solid gray'});
-	$('#Bq3l').css({border:'1px solid gray'});
+	$('#Bq3a').css({border:'1px solid #323232'});
+	$('#Bq3s').css({border:'1px solid #fff'});
+	$('#Bq3l').css({border:'1px solid #fff'});
 	Bq3=2;
 	});
 	$('#Bq3l').click(function(){ 
-	$('#Bq3l').css({border:'2px solid #000000'});
-	$('#Bq3a').css({border:'1px solid gray'});
-	$('#Bq3s').css({border:'1px solid gray'});
+	$('#Bq3l').css({border:'1px solid #323232'});
+	$('#Bq3a').css({border:'1px solid #fff'});
+	$('#Bq3s').css({border:'1px solid #fff'});
 	Bq3=3;
 	});
 // question 4
 	//color
 	//value
 	$('#Bq4s').click(function(){ 
-	$('#Bq4s').css({border:'2px solid #000000'});
-	$('#Bq4a').css({border:'1px solid gray'});
-	$('#Bq4l').css({border:'1px solid gray'});
+	$('#Bq4s').css({border:'1px solid #323232'});
+	$('#Bq4a').css({border:'1px solid #fff'});
+	$('#Bq4l').css({border:'1px solid #fff'});
 	Bq4=1;
 	});
 	$('#Bq4a').click(function(){ 
-	$('#Bq4a').css({border:'2px solid #000000'});
-	$('#Bq4s').css({border:'1px solid gray'});
-	$('#Bq4l').css({border:'1px solid gray'});
+	$('#Bq4a').css({border:'1px solid #323232'});
+	$('#Bq4s').css({border:'1px solid #fff'});
+	$('#Bq4l').css({border:'1px solid #fff'});
 	Bq4=2;
 	});
 	$('#Bq4l').click(function(){ 
-	$('#Bq4l').css({border:'2px solid #000000'});
-	$('#Bq4a').css({border:'1px solid gray'});
-	$('#Bq4s').css({border:'1px solid gray'});
+	$('#Bq4l').css({border:'1px solid #323232'});
+	$('#Bq4a').css({border:'1px solid #fff'});
+	$('#Bq4s').css({border:'1px solid #fff'});
 	Bq4=3;
 	});
 // question 5
 	//color
 	//value
 	$('#Bq5s').click(function(){ 
-	$('#Bq5s').css({border:'2px solid #000000'});
-	$('#Bq5a').css({border:'1px solid gray'});
-	$('#Bq5l').css({border:'1px solid gray'});
+	$('#Bq5s').css({border:'1px solid #323232'});
+	$('#Bq5a').css({border:'1px solid #fff'});
+	$('#Bq5l').css({border:'1px solid #fff'});
 	Bq5=1;
 	});
 	$('#Bq5a').click(function(){ 
-	$('#Bq5a').css({border:'2px solid #000000'});
-	$('#Bq5s').css({border:'1px solid gray'});
-	$('#Bq5l').css({border:'1px solid gray'});
+	$('#Bq5a').css({border:'1px solid #323232'});
+	$('#Bq5s').css({border:'1px solid #fff'});
+	$('#Bq5l').css({border:'1px solid #fff'});
 	Bq5=2;
 	});
 	$('#Bq5l').click(function(){ 
-	$('#Bq5l').css({border:'2px solid #000000'});
-	$('#Bq5a').css({border:'1px solid gray'});
-	$('#Bq5s').css({border:'1px solid gray'});
+	$('#Bq5l').css({border:'1px solid #323232'});
+	$('#Bq5a').css({border:'1px solid #fff'});
+	$('#Bq5s').css({border:'1px solid #fff'});
 	Bq5=3;
 	});
 // question 6
 	//color
 	//value
 	$('#Bq6s').click(function(){ 
-	$('#Bq6s').css({border:'2px solid #000000'});
-	$('#Bq6a').css({border:'1px solid gray'});
-	$('#Bq6l').css({border:'1px solid gray'});
+	$('#Bq6s').css({border:'1px solid #323232'});
+	$('#Bq6a').css({border:'1px solid #fff'});
+	$('#Bq6l').css({border:'1px solid #fff'});
 	Bq6=1;
 	});
 	$('#Bq6a').click(function(){ 
-	$('#Bq6a').css({border:'2px solid #000000'});
-	$('#Bq6s').css({border:'1px solid gray'});
-	$('#Bq6l').css({border:'1px solid gray'});
+	$('#Bq6a').css({border:'1px solid #323232'});
+	$('#Bq6s').css({border:'1px solid #fff'});
+	$('#Bq6l').css({border:'1px solid #fff'});
 	Bq6=2;
 	});
 }

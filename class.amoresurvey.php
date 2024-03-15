@@ -5,7 +5,44 @@ function amoresurvey(){
 
 	?>
 
-	<style type="text/style"></style>
+	<style>
+
+		.a_results{
+			background:#fff9;
+		}
+		#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+		body .sbody span, .container .sbody span{border:0px;}
+		#mc_embed_signup_scroll{
+				background: #fff9;
+				padding: 20px;
+				width: 90%;
+			}
+		#signup_submit{
+				background: #333;
+				color: #fff;
+				border: 0px;
+				padding: 10px 20px;
+				border-radius: 30px;
+		}
+		.a_results{
+				background: #fff9;
+				padding: 20px;
+		}
+		.a_results_details, .custom_table_two{
+				background: #03b903;
+				padding: 25px;
+				color: yellow;
+				margin: 20px;
+				border-radius: 10px;
+				font-size: 20px;
+		}
+		td .td_custom_table_two{
+			color: yellow;
+			padding: 0px 15px;
+		}
+
+	</style>
+	
 
 <?php
 
@@ -36,18 +73,11 @@ function amoresurvey(){
 			$wpdb->insert($table_name, $data);
 
 		$finalanswer = '
+		</style>
 			<div id="signup_form" style="padding:30% 5%;">
 					
 				<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-				<style type="text/css">
-					#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-					body .sbody span, .container .sbody span{border:0px;}
-
-					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-					We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-				</style	>
-
 				<div id="mc_embed_signup">
 
 					<form action="//amorebeds.us11.list-manage.com/subscribe/post?u=b53d47510fa8715938c9fd197&amp;id=7cc439a2ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -84,17 +114,25 @@ function amoresurvey(){
 					
 					</div>
 					<div id="actual_results" style="display:none;padding:30% 5%;"><br><br>
-					<h4>Thank you for completing our survey.<br><br>Our recommendation would be to purchase an<br> ';
+					<div class="a_results">
+					<h5>Thank you for completing our survey.<br><br>Our recommendation would be to purchase an</h5><br>';
 
 			$finalanswer .='
 			<table class="custom_table_two">
 				<tr style="height:;padding:5px;">
-					<td><h5 style="margin:0px;">(Left side)</h5></td>
-					<td><h5 style="margin:0px;">(Right side)</h5></td>
+					<td class="td_custom_table_two"><h5 style="color: yellow; margin:0px;">(Left side)</h5></td>
+					<td class="td_custom_table_two" ><h5 style="color: yellow; margin:0px;">(Right side)</h5></td>
 				</tr>
 				<tr>
-					<td>
-						<div style="padding-left:5px;float:left;"><h5 style="margin:0px; line-height:33px;">Amore  '.$_POST["ans1"].'<br>';
+					<td class="td_custom_table_two">
+						<div style="color: yellow; padding-left:5px;float:left;">
+						<h5 style="color: yellow;
+						margin: 0px;
+						line-height: 33px;
+						background: #fff2;
+						padding: 15px;
+						margin: 10px;
+						border-radius: 10px;">Amore  '.$_POST["ans1"].'<br>';
 									
 							if($_POST["Aans1"]==1){
 								$finalanswer.='With Copper';
@@ -107,8 +145,15 @@ function amoresurvey(){
 							</div>
 						</div>
 					</td>
-					<td>
-						<div style="padding-left:5px;float:left;"><h5 style="line-height:33px; margin:0px;">Amore '.$_POST["ans2"].' <br>';
+					<td class="td_custom_table_two">
+						<div style="padding-left:5px;float:left;">
+						<h5 style="color: yellow;
+						margin: 0px;
+						line-height: 33px;
+						background: #fff2;
+						padding: 15px;
+						margin: 10px;
+						border-radius: 10px;">Amore '.$_POST["ans2"].' <br>';
 						if($_POST["Bans1"]==1){
 							$finalanswer.='With Copper';
 						}
@@ -185,9 +230,11 @@ function amoresurvey(){
 
 			</div>
 			<div id="actual_results" style="display:none;padding:30% 5%;">
-				<div class="" style=""><br><br>
-					<h4>
-						Thank you for completing our survey.<br><br>Our recommendation would be to purchase an<br> <div style="height:;padding:5px;"><div style="padding-left:3px; text-align: left; line-height: 1.3;"> Amore '.$_POST["ans1"].'<br>';
+				<div class="a_results" style=""><br><br>
+					<h5>
+						Thank you for completing our survey.<br><br>Our recommendation would be to purchase an<br> <div style="height:;padding:5px;">
+
+						<div class="a_results_details" style=""> Amore '.$_POST["ans1"];
 						
 						if($_POST["bans1"]==1){
 							$finalanswer.='With Copper';
@@ -197,7 +244,8 @@ function amoresurvey(){
 						}
 						
 						$finalanswer.=' </div><div> 
-					</h4>
+						
+					</h5>
 			</div>';
 				
 				$finalresponce = array( "response" => $finalanswer );

@@ -716,7 +716,7 @@ $('#Bq5').css({border:'1px solid red','border-radius':'5px', 'padding':'5px'});
 }
 }
 	
-
+$('#p1').click();
 $('#submit1').click(function (){
 
 // see if there is value missing- if there is any missing show error 

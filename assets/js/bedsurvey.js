@@ -25,16 +25,62 @@ $('#survey_close').click(function(){
 	survey_reset();
 	});
 	
-$('#p1').click(function(){ 
-	$('#p1').css({border:'1px solid #323232'});
-	$('#p2').css({border:'1px solid #fff'});
+$('#p1').click(function(){
+	$('#p1').css( {
+		border:'2px solid #3336',
+		background: '#fff9',
+		color: '#333',
+	} );
+	$('#p2').css({
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
+	});
+	$('#pns').css( {
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
+	} );
 	$('.1person').show();
 	$('.person').hide();
 	p1=1
+});
+$('#pns').click(function(){
+	$('#pns').css( {
+		border:'2px solid #3336',
+		background: '#fff9',
+		color: '#333',
+	} );
+	$('#p2').css({
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
 	});
+	$('#p1').css({
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
+	});
+	$('.1person').show();
+	$('.person').hide();
+	p1=1
+} );
 $('#p2').click(function(){ 
-	$('#p2').css({border:'1px solid #323232'});
-	$('#p1').css({border:'1px solid #fff'});
+	$('#p2').css({
+		border:'2px solid #3336',
+		background: '#fff9',
+		color: '#333',
+	});
+	$('#p1').css({		
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
+	});
+	$('#pns').css( {
+		border:'2px solid #fff',
+		background: '#fff9',
+		color: '#333',
+	} );
 	$('.person').show();
 	$('.1person').hide();
 	p1=2;
@@ -48,148 +94,156 @@ $('#p2').click(function(){
 function oneperson() {	
 // question 1
 	//color
-	$('#q1s').click(function(){
-	$('#q1s').css({border:'1px solid #323232'});
-	$('#q1m').css({border:'1px solid #fff'});
-	$('#q1f').css({border:'1px solid #fff'});
-	$('#q1null').css({border:'1px solid #fff'});
-	q1=2;
+	$('#q1s').click(function(){ // soft
+	$('#q1s').css({border:'2px solid #3339'});
+	$('#q1m').css({border:'2px solid #fff'});
+	$('#q1f').css({border:'2px solid #fff'});
+	$('#q1null').css({border:'2px solid #fff'});
+		q1= $(this).data('selection') ;
 	});
-	$('#q1m').click(function(){ 
-	$('#q1m').css({border:'1px solid #323232'});
-	$('#q1s').css({border:'1px solid #fff'});
-	$('#q1f').css({border:'1px solid #fff'});
-	$('#q1null').css({border:'1px solid #fff'});
-	q1=4;
+	$('#q1m').click(function(){ // medium
+	$('#q1m').css({border:'2px solid #3339'});
+	$('#q1s').css({border:'2px solid #fff'});
+	$('#q1f').css({border:'2px solid #fff'});
+	$('#q1null').css({border:'2px solid #fff'});
+	q1=$(this).data('selection');
 	});
 	$('#q1null').click(function(){ 
-	$('#q1null').css({border:'1px solid #323232'});
-	$('#q1s').css({border:'1px solid #fff'});
-	$('#q1f').css({border:'1px solid #fff'});
-	$('#q1m').css({border:'1px solid #fff'});
-	q1=4;
+	$('#q1null').css({border:'2px solid #3339'});
+	$('#q1s').css({border:'2px solid #fff'});
+	$('#q1f').css({border:'2px solid #fff'});
+	$('#q1m').css({border:'2px solid #fff'});
+	q1=$(this).data('selection');
 	});
-	$('#q1f').click(function(){ 
-	$('#q1f').css({border:'1px solid #323232'});
-	$('#q1m').css({border:'1px solid #fff'});
-	$('#q1s').css({border:'1px solid #fff'});
-	$('#q1null').css({border:'1px solid #fff'});
-	q1=6;
+	$('#q1f').click(function(){ // firm
+	$('#q1f').css({border:'2px solid #3339'});
+	$('#q1m').css({border:'2px solid #fff'});
+	$('#q1s').css({border:'2px solid #fff'});
+	$('#q1null').css({border:'2px solid #fff'});
+	q1=$(this).data('selection');
 	});
 	//value
 
 // question 2
 	//color
 	//value
-$('#q2b').click(function(){ 
-	$('#q2b').css({border:'1px solid #323232'});
-	$('#q2s').css({border:'1px solid #fff'});
-	$('#q2si').css({border:'1px solid #fff'});
-	$('#q2a').css({border:'1px solid #fff'});
-	q2=2;
+$('#q2b').click(function(){ // back
+	$('#q2b').css({border:'2px solid #3339'});
+	$('#q2s').css({border:'2px solid #fff'});
+	$('#q2si').css({border:'2px solid #fff'});
+	$('#q2a').css({border:'2px solid #fff'});
+	q2=$(this).data('selection');
 	});	
 $('#q2s').click(function(){ 
-	$('#q2s').css({border:'1px solid #323232'});
-	$('#q2b').css({border:'1px solid #fff'});
-	$('#q2si').css({border:'1px solid #fff'});
-	$('#q2a').css({border:'1px solid #fff'});
-	q2=3;
+	$('#q2s').css({border:'2px solid #3339'});
+	$('#q2b').css({border:'2px solid #fff'});
+	$('#q2si').css({border:'2px solid #fff'});
+	$('#q2a').css({border:'2px solid #fff'});
+	q2=$(this).data('selection');
 	});
 $('#q2si').click(function(){ 
-	$('#q2si').css({border:'1px solid #323232'});
-	$('#q2s').css({border:'1px solid #fff'});
-	$('#q2b').css({border:'1px solid #fff'});
-	$('#q2a').css({border:'1px solid #fff'});
-	q2=1;
+	$('#q2si').css({border:'2px solid #3339'});
+	$('#q2s').css({border:'2px solid #fff'});
+	$('#q2b').css({border:'2px solid #fff'});
+	$('#q2a').css({border:'2px solid #fff'});
+	q2=$(this).data('selection');
 	});
 $('#q2a').click(function(){ 
 	$('#q2a').css({border:'1px solid #000000'});
-	$('#q2s').css({border:'1px solid #fff'});
-	$('#q2si').css({border:'1px solid #fff'});
-	$('#q2b').css({border:'1px solid #fff'});
-	q2=2;
+	$('#q2s').css({border:'2px solid #fff'});
+	$('#q2si').css({border:'2px solid #fff'});
+	$('#q2b').css({border:'2px solid #fff'});
+	q2=$(this).data('selection');
 	});
-
 
 // question 3
 	//color
 	//value
 	$('#q3s').click(function(){ 
-	$('#q3s').css({border:'1px solid #323232'});
-	$('#q3a').css({border:'1px solid #fff'});
-	$('#q3l').css({border:'1px solid #fff'});
-	q3=1;
+	$('#q3s').css({border:'2px solid #3339'});
+	$('#q3a').css({border:'2px solid #fff'});
+	$('#q3l').css({border:'2px solid #fff'});
+	q3=$(this).data('selection');
 	});
 		$('#q3a').click(function(){ 
-	$('#q3a').css({border:'1px solid #323232'});
-	$('#q3s').css({border:'1px solid #fff'});
-	$('#q3l').css({border:'1px solid #fff'});
-	q3=2;
+	$('#q3a').css({border:'2px solid #3339'});
+	$('#q3s').css({border:'2px solid #fff'});
+	$('#q3l').css({border:'2px solid #fff'});
+	q3=$(this).data('selection');
 	});
 	$('#q3l').click(function(){ 
-	$('#q3l').css({border:'1px solid #323232'});
-	$('#q3a').css({border:'1px solid #fff'});
-	$('#q3s').css({border:'1px solid #fff'});
-	q3=3;
+	$('#q3l').css({border:'2px solid #3339'});
+	$('#q3a').css({border:'2px solid #fff'});
+	$('#q3s').css({border:'2px solid #fff'});
+	q3=$(this).data('selection');
 	});
 	
 // question 4
 	//color
 	//value
 	$('#q4s').click(function(){ 
-	$('#q4s').css({border:'1px solid #323232'});
-	$('#q4a').css({border:'1px solid #fff'});
-	$('#q4l').css({border:'1px solid #fff'});
-	q4=1;
+	$('#q4s').css({border:'2px solid #3339'});
+	$('#q4a').css({border:'2px solid #fff'});
+	$('#q4l').css({border:'2px solid #fff'});
+	q4=$(this).data('selection');
 	});
 	$('#q4a').click(function(){ 
-	$('#q4a').css({border:'1px solid #323232'});
-	$('#q4s').css({border:'1px solid #fff'});
-	$('#q4l').css({border:'1px solid #fff'});
-	q4=2;
+	$('#q4a').css({border:'2px solid #3339'});
+	$('#q4s').css({border:'2px solid #fff'});
+	$('#q4l').css({border:'2px solid #fff'});
+	q4=$(this).data('selection');
 	});
 	$('#q4l').click(function(){ 
-	$('#q4l').css({border:'1px solid #323232'});
-	$('#q4a').css({border:'1px solid #fff'});
-	$('#q4s').css({border:'1px solid #fff'});
-	q4=3;
+	$('#q4l').css({border:'2px solid #3339'});
+	$('#q4a').css({border:'2px solid #fff'});
+	$('#q4s').css({border:'2px solid #fff'});
+	q4=$(this).data('selection');
 	});
 	
 // question 5
 	//color
 	//value
 	$('#q5s').click(function(){ 
-	$('#q5s').css({border:'1px solid #323232'});
-	$('#q5a').css({border:'1px solid #fff'});
-	$('#q5l').css({border:'1px solid #fff'});
-	q5=1;
+	$('#q5s').css({border:'2px solid #3339'});
+	$('#q5a').css({border:'2px solid #fff'});
+	$('#q5l').css({border:'2px solid #fff'});
+	q5=$(this).data('selection');
 	});
 	$('#q5a').click(function(){ 
-	$('#q5a').css({border:'1px solid #323232'});
-	$('#q5s').css({border:'1px solid #fff'});
-	$('#q5l').css({border:'1px solid #fff'});
-	q5=2;
+	$('#q5a').css({border:'2px solid #3339'});
+	$('#q5s').css({border:'2px solid #fff'});
+	$('#q5l').css({border:'2px solid #fff'});
+	q5=$(this).data('selection');
 	});
 	$('#q5l').click(function(){ 
-	$('#q5l').css({border:'1px solid #323232'});
-	$('#q5a').css({border:'1px solid #fff'});
-	$('#q5s').css({border:'1px solid #fff'});
-	q5=3;
+	$('#q5l').css({border:'2px solid #3339'});
+	$('#q5a').css({border:'2px solid #fff'});
+	$('#q5s').css({border:'2px solid #fff'});
+	q5=$(this).data('selection');
 	});
 // question 6
 	//color
 	//value
 	$('#q6s').click(function(){ 
-	$('#q6s').css({border:'1px solid #323232'});
-	$('#q6a').css({border:'1px solid #fff'});
-	$('#q6l').css({border:'1px solid #fff'});
-	q6=1;
+	$('#q6s').css({border:'2px solid #3339'});
+	$('#q6a').css({border:'2px solid #fff'});
+	$('#q6l').css({border:'2px solid #fff'});
+	$('#q6ns').css({border:'2px solid #fff9'});
+	q6=$(this).data('selection');
+	});
+	$('#q6ns').click(function(){ 
+		$('#q6ns').css({border:'2px solid #3339'});
+		$('#q6a').css({border:'2px solid #fff9'});
+		$('#q6l').css({border:'2px solid #fff9'});
+		$('#q6s').css({border:'2px solid #fff9'});
+		q6=$(this).data('selection');
 	});
 	$('#q6a').click(function(){ 
-	$('#q6a').css({border:'1px solid #323232'});
-	$('#q6s').css({border:'1px solid #fff'});
-	$('#q6l').css({border:'1px solid #fff'});
-	q6=2;
+	$('#q6a').css({border:'2px solid #3339'});
+	$('#q6s').css({border:'2px solid #fff'});
+	$('#q6l').css({border:'2px solid #fff'});
+	$('#q6ns').css({border:'2px solid #fff9'});
+	q6=$(this).data('selection');
 	});	
 }
 //----------------------------------------------------------------------end of form for 1 person-----------------------------------------------------------------------------------------------------------------------
@@ -201,32 +255,32 @@ function twopeople() {
 // question 1
 	//color
 	$('#Aq1s').click(function(){ 
-	$('#Aq1s').css({border:'1px solid #323232'});
-	$('#Aq1m').css({border:'1px solid #fff'});
-	$('#Aq1f').css({border:'1px solid #fff'});
-	$('#Aq1null').css({border:'1px solid #fff'});
-	Aq1=1*2;
+	$('#Aq1s').css({border:'2px solid #3339'});
+	$('#Aq1m').css({border:'2px solid #fff'});
+	$('#Aq1f').css({border:'2px solid #fff'});
+	$('#Aq1null').css({border:'2px solid #fff'});
+	Aq1=$(this).data('selection');
 	});
 	$('#Aq1m').click(function(){ 
-	$('#Aq1m').css({border:'1px solid #323232'});
-	$('#Aq1s').css({border:'1px solid #fff'});
-	$('#Aq1f').css({border:'1px solid #fff'});
-	$('#Aq1null').css({border:'1px solid #fff'});
-	Aq1=2*2;
+	$('#Aq1m').css({border:'2px solid #3339'});
+	$('#Aq1s').css({border:'2px solid #fff'});
+	$('#Aq1f').css({border:'2px solid #fff'});
+	$('#Aq1null').css({border:'2px solid #fff'});
+	Aq1=$(this).data('selection');
 	});
 	$('#Aq1null').click(function(){ 
-	$('#Aq1null').css({border:'1px solid #323232'});
-	$('#Aq1s').css({border:'1px solid #fff'});
-	$('#Aq1f').css({border:'1px solid #fff'});
-	$('#Aq1m').css({border:'1px solid #fff'});
-	Aq1=2*2;
+	$('#Aq1null').css({border:'2px solid #3339'});
+	$('#Aq1s').css({border:'2px solid #fff'});
+	$('#Aq1f').css({border:'2px solid #fff'});
+	$('#Aq1m').css({border:'2px solid #fff'});
+	Aq1=$(this).data('selection');
 	});
 	$('#Aq1f').click(function(){ 
-	$('#Aq1f').css({border:'1px solid #323232'});
-	$('#Aq1m').css({border:'1px solid #fff'});
-	$('#Aq1s').css({border:'1px solid #fff'});
-	$('#Aq1null').css({border:'1px solid #fff'});
-	Aq1=3*2;
+	$('#Aq1f').css({border:'2px solid #3339'});
+	$('#Aq1m').css({border:'2px solid #fff'});
+	$('#Aq1s').css({border:'2px solid #fff'});
+	$('#Aq1null').css({border:'2px solid #fff'});
+	Aq1=$(this).data('selection');
 	});
 	//value
 	
@@ -234,32 +288,32 @@ function twopeople() {
 	//color
 	//value
 $('#Aq2b').click(function(){ 
-	$('#Aq2b').css({border:'1px solid #323232'});
-	$('#Aq2s').css({border:'1px solid #fff'});
-	$('#Aq2si').css({border:'1px solid #fff'});
-	$('#Aq2a').css({border:'1px solid #fff'});
-	Aq2=2;
+	$('#Aq2b').css({border:'2px solid #3339'});
+	$('#Aq2s').css({border:'2px solid #fff'});
+	$('#Aq2si').css({border:'2px solid #fff'});
+	$('#Aq2a').css({border:'2px solid #fff'});
+	Aq2=$(this).data('selection');
 	});	
 $('#Aq2s').click(function(){ 
-	$('#Aq2s').css({border:'1px solid #323232'});
-	$('#Aq2b').css({border:'1px solid #fff'});
-	$('#Aq2si').css({border:'1px solid #fff'});
-	$('#Aq2a').css({border:'1px solid #fff'});
-	Aq2=3;
+	$('#Aq2s').css({border:'2px solid #3339'});
+	$('#Aq2b').css({border:'2px solid #fff'});
+	$('#Aq2si').css({border:'2px solid #fff'});
+	$('#Aq2a').css({border:'2px solid #fff'});
+	Aq2=$(this).data('selection');
 	});
 $('#Aq2si').click(function(){ 
-	$('#Aq2si').css({border:'1px solid #323232'});
-	$('#Aq2s').css({border:'1px solid #fff'});
-	$('#Aq2b').css({border:'1px solid #fff'});
-	$('#Aq2a').css({border:'1px solid #fff'});
-	Aq2=1;
+	$('#Aq2si').css({border:'2px solid #3339'});
+	$('#Aq2s').css({border:'2px solid #fff'});
+	$('#Aq2b').css({border:'2px solid #fff'});
+	$('#Aq2a').css({border:'2px solid #fff'});
+	Aq2=$(this).data('selection');
 	});
 $('#Aq2a').click(function(){ 
-	$('#Aq2a').css({border:'1px solid #323232'});
-	$('#Aq2s').css({border:'1px solid #fff'});
-	$('#Aq2si').css({border:'1px solid #fff'});
-	$('#Aq2b').css({border:'1px solid #fff'});
-	Aq2=2;
+	$('#Aq2a').css({border:'2px solid #3339'});
+	$('#Aq2s').css({border:'2px solid #fff'});
+	$('#Aq2si').css({border:'2px solid #fff'});
+	$('#Aq2b').css({border:'2px solid #fff'});
+	Aq2=$(this).data('selection');
 	});
 	
 	
@@ -267,80 +321,90 @@ $('#Aq2a').click(function(){
 	//color
 	//value
 	$('#Aq3s').click(function(){ 
-	$('#Aq3s').css({border:'1px solid #323232'});
-	$('#Aq3a').css({border:'1px solid #fff'});
-	$('#Aq3l').css({border:'1px solid #fff'});
-	Aq3=1;
+	$('#Aq3s').css({border:'2px solid #3339'});
+	$('#Aq3a').css({border:'2px solid #fff'});
+	$('#Aq3l').css({border:'2px solid #fff'});
+	Aq3=$(this).data('selection');
 	});
 	$('#Aq3a').click(function(){ 
-	$('#Aq3a').css({border:'1px solid #323232'});
-	$('#Aq3s').css({border:'1px solid #fff'});
-	$('#Aq3l').css({border:'1px solid #fff'});
-	Aq3=2;
+	$('#Aq3a').css({border:'2px solid #3339'});
+	$('#Aq3s').css({border:'2px solid #fff'});
+	$('#Aq3l').css({border:'2px solid #fff'});
+	Aq3=$(this).data('selection');
 	});
 	$('#Aq3l').click(function(){ 
-	$('#Aq3l').css({border:'1px solid #323232'});
-	$('#Aq3a').css({border:'1px solid #fff'});
-	$('#Aq3s').css({border:'1px solid #fff'});
-	Aq3=3;
+	$('#Aq3l').css({border:'2px solid #3339'});
+	$('#Aq3a').css({border:'2px solid #fff'});
+	$('#Aq3s').css({border:'2px solid #fff'});
+	Aq3=$(this).data('selection');
 	});
 	
 // question 4
 	//color
 	//value
 	$('#Aq4s').click(function(){ 
-	$('#Aq4s').css({border:'1px solid #323232'});
-	$('#Aq4a').css({border:'1px solid #fff'});
-	$('#Aq4l').css({border:'1px solid #fff'});
-	Aq4=1;
+	$('#Aq4s').css({border:'2px solid #3339'});
+	$('#Aq4a').css({border:'2px solid #fff'});
+	$('#Aq4l').css({border:'2px solid #fff'});
+	Aq4=$(this).data('selection');
 	});
 	$('#Aq4a').click(function(){ 
-	$('#Aq4a').css({border:'1px solid #323232'});
-	$('#Aq4s').css({border:'1px solid #fff'});
-	$('#Aq4l').css({border:'1px solid #fff'});
-	Aq4=2;
+	$('#Aq4a').css({border:'2px solid #3339'});
+	$('#Aq4s').css({border:'2px solid #fff'});
+	$('#Aq4l').css({border:'2px solid #fff'});
+	Aq4=$(this).data('selection');
 	});
 	$('#Aq4l').click(function(){ 
-	$('#Aq4l').css({border:'1px solid #323232'});
-	$('#Aq4a').css({border:'1px solid #fff'});
-	$('#Aq4s').css({border:'1px solid #fff'});
-	Aq4=3;
+	$('#Aq4l').css({border:'2px solid #3339'});
+	$('#Aq4a').css({border:'2px solid #fff'});
+	$('#Aq4s').css({border:'2px solid #fff'});
+	Aq4=$(this).data('selection');
 	});
 // question 5
 	//color
 	//value
 	$('#Aq5s').click(function(){ 
-	$('#Aq5s').css({border:'1px solid #323232'});
-	$('#Aq5a').css({border:'1px solid #fff'});
-	$('#Aq5l').css({border:'1px solid #fff'});
-	Aq5=1;
+	$('#Aq5s').css({border:'2px solid #3339'});
+	$('#Aq5a').css({border:'2px solid #fff'});
+	$('#Aq5l').css({border:'2px solid #fff'});
+	Aq5=$(this).data('selection');
 	});
 	$('#Aq5a').click(function(){ 
-	$('#Aq5a').css({border:'1px solid #323232'});
-	$('#Aq5s').css({border:'1px solid #fff'});
-	$('#Aq5l').css({border:'1px solid #fff'});
-	Aq5=2;
+	$('#Aq5a').css({border:'2px solid #3339'});
+	$('#Aq5s').css({border:'2px solid #fff'});
+	$('#Aq5l').css({border:'2px solid #fff'});
+	Aq5=$(this).data('selection');
 	});
 	$('#Aq5l').click(function(){ 
-	$('#Aq5l').css({border:'1px solid #323232'});
-	$('#Aq5a').css({border:'1px solid #fff'});
-	$('#Aq5s').css({border:'1px solid #fff'});
-	Aq5=3;
+	$('#Aq5l').css({border:'2px solid #3339'});
+	$('#Aq5a').css({border:'2px solid #fff'});
+	$('#Aq5s').css({border:'2px solid #fff'});
+	Aq5=$(this).data('selection');
 	});
 // question 6
 	//color
 	//value
 	$('#Aq6s').click(function(){ 
-	$('#Aq6s').css({border:'1px solid #323232'});
-	$('#Aq6a').css({border:'1px solid #fff'});
-	$('#Aq6l').css({border:'1px solid #fff'});
-	Aq6=1;
+	$('#Aq6s').css({border:'2px solid #3339'});
+	$('#Aq6a').css({border:'2px solid #fff'});
+	$('#Aq6l').css({border:'2px solid #fff'});
+	$('#Aq6ns').css({border:'2px solid #fff'});
+	Aq6=$(this).data('selection');
 	});
 	$('#Aq6a').click(function(){ 
-	$('#Aq6a').css({border:'1px solid #323232'});
-	$('#Aq6s').css({border:'1px solid #fff'});
-	$('#Aq6l').css({border:'1px solid #fff'});
-	Aq6=2;
+	$('#Aq6a').css({border:'2px solid #3339'});
+	$('#Aq6s').css({border:'2px solid #fff'});
+	$('#Aq6l').css({border:'2px solid #fff'});
+	$('#Aq6ns').css({border:'2px solid #fff'});
+	Aq6=$(this).data('selection');
+	});
+
+	$('#Aq6ns').click(function(){ 
+		$('#Aq6ns').css({border:'2px solid #3339'});
+		$('#Aq6a').css({border:'2px solid #fff'});
+		$('#Aq6s').css({border:'2px solid #fff'});
+		$('#Aq6l').css({border:'2px solid #fff'});
+		Aq6=$(this).data('selection');
 	});
 	
 	
@@ -348,142 +412,149 @@ $('#Aq2a').click(function(){
 // question 1
 	//color
 	$('#Bq1s').click(function(){ 
-	$('#Bq1s').css({border:'1px solid #323232'});
-	$('#Bq1m').css({border:'1px solid #fff'});
-	$('#Bq1f').css({border:'1px solid #fff'});
-	$('#Bq1null').css({border:'1px solid #fff'});
-	Bq1=1*2;
+	$('#Bq1s').css({border:'2px solid #3339'});
+	$('#Bq1m').css({border:'2px solid #fff'});
+	$('#Bq1f').css({border:'2px solid #fff'});
+	$('#Bq1null').css({border:'2px solid #fff'});
+	Bq1=$(this).data('selection');
 	});
 	$('#Bq1m').click(function(){ 
-	$('#Bq1m').css({border:'1px solid #323232'});
-	$('#Bq1s').css({border:'1px solid #fff'});
-	$('#Bq1f').css({border:'1px solid #fff'});
-	$('#Bq1null').css({border:'1px solid #fff'});
-	Bq1=2*2;
+	$('#Bq1m').css({border:'2px solid #3339'});
+	$('#Bq1s').css({border:'2px solid #fff'});
+	$('#Bq1f').css({border:'2px solid #fff'});
+	$('#Bq1null').css({border:'2px solid #fff'});
+	Bq1=$(this).data('selection');
 	});
 	$('#Bq1null').click(function(){ 
-	$('#Bq1null').css({border:'1px solid #323232'});
-	$('#Bq1s').css({border:'1px solid #fff'});
-	$('#Bq1f').css({border:'1px solid #fff'});
-	$('#Bq1m').css({border:'1px solid #fff'});
-	Bq1=2*2;
+	$('#Bq1null').css({border:'2px solid #3339'});
+	$('#Bq1s').css({border:'2px solid #fff'});
+	$('#Bq1f').css({border:'2px solid #fff'});
+	$('#Bq1m').css({border:'2px solid #fff'});
+	Bq1=$(this).data('selection');
 	});
 	$('#Bq1f').click(function(){ 
-	$('#Bq1f').css({border:'1px solid #323232'});
-	$('#Bq1m').css({border:'1px solid #fff'});
-	$('#Bq1s').css({border:'1px solid #fff'});
-	$('#Bq1null').css({border:'1px solid #fff'});
-	Bq1=3*2;
+	$('#Bq1f').css({border:'2px solid #3339'});
+	$('#Bq1m').css({border:'2px solid #fff'});
+	$('#Bq1s').css({border:'2px solid #fff'});
+	$('#Bq1null').css({border:'2px solid #fff'});
+	Bq1=$(this).data('selection');
 	});
 	//value
 // question 2
 	//color
 	//value
 $('#Bq2b').click(function(){ 
-	$('#Bq2b').css({border:'1px solid #323232'});
-	$('#Bq2s').css({border:'1px solid #fff'});
-	$('#Bq2si').css({border:'1px solid #fff'});
-	$('#Bq2a').css({border:'1px solid #fff'});
-	Bq2=2;
+	$('#Bq2b').css({border:'2px solid #3339'});
+	$('#Bq2s').css({border:'2px solid #fff'});
+	$('#Bq2si').css({border:'2px solid #fff'});
+	$('#Bq2a').css({border:'2px solid #fff'});
+	Bq2=$(this).data('selection');
 	});	
 $('#Bq2s').click(function(){ 
-	$('#Bq2s').css({border:'1px solid #323232'});
-	$('#Bq2b').css({border:'1px solid #fff'});
-	$('#Bq2si').css({border:'1px solid #fff'});
-	$('#Bq2a').css({border:'1px solid #fff'});
-	Bq2=3;
+	$('#Bq2s').css({border:'2px solid #3339'});
+	$('#Bq2b').css({border:'2px solid #fff'});
+	$('#Bq2si').css({border:'2px solid #fff'});
+	$('#Bq2a').css({border:'2px solid #fff'});
+	Bq2=$(this).data('selection');
 	});
 $('#Bq2si').click(function(){ 
-	$('#Bq2si').css({border:'1px solid #323232'});
-	$('#Bq2s').css({border:'1px solid #fff'});
-	$('#Bq2b').css({border:'1px solid #fff'});
-	$('#Bq2a').css({border:'1px solid #fff'});
-	Bq2=1;
+	$('#Bq2si').css({border:'2px solid #3339'});
+	$('#Bq2s').css({border:'2px solid #fff'});
+	$('#Bq2b').css({border:'2px solid #fff'});
+	$('#Bq2a').css({border:'2px solid #fff'});
+	Bq2=$(this).data('selection');
 	});
 $('#Bq2a').click(function(){ 
-	$('#Bq2a').css({border:'1px solid #323232'});
-	$('#Bq2s').css({border:'1px solid #fff'});
-	$('#Bq2si').css({border:'1px solid #fff'});
-	$('#Bq2b').css({border:'1px solid #fff'});
-	Bq2=2;
+	$('#Bq2a').css({border:'2px solid #3339'});
+	$('#Bq2s').css({border:'2px solid #fff'});
+	$('#Bq2si').css({border:'2px solid #fff'});
+	$('#Bq2b').css({border:'2px solid #fff'});
+	Bq2=$(this).data('selection');
 	});
 // question 3
 	//color
 	//value
 	$('#Bq3s').click(function(){ 
-	$('#Bq3s').css({border:'1px solid #323232'});
-	$('#Bq3a').css({border:'1px solid #fff'});
-	$('#Bq3l').css({border:'1px solid #fff'});
-	Bq3=1;
+	$('#Bq3s').css({border:'2px solid #3339'});
+	$('#Bq3a').css({border:'2px solid #fff'});
+	$('#Bq3l').css({border:'2px solid #fff'});
+	Bq3=$(this).data('selection');
 	});
 	$('#Bq3a').click(function(){ 
-	$('#Bq3a').css({border:'1px solid #323232'});
-	$('#Bq3s').css({border:'1px solid #fff'});
-	$('#Bq3l').css({border:'1px solid #fff'});
-	Bq3=2;
+	$('#Bq3a').css({border:'2px solid #3339'});
+	$('#Bq3s').css({border:'2px solid #fff'});
+	$('#Bq3l').css({border:'2px solid #fff'});
+	Bq3=$(this).data('selection');
 	});
 	$('#Bq3l').click(function(){ 
-	$('#Bq3l').css({border:'1px solid #323232'});
-	$('#Bq3a').css({border:'1px solid #fff'});
-	$('#Bq3s').css({border:'1px solid #fff'});
-	Bq3=3;
+	$('#Bq3l').css({border:'2px solid #3339'});
+	$('#Bq3a').css({border:'2px solid #fff'});
+	$('#Bq3s').css({border:'2px solid #fff'});
+	Bq3=$(this).data('selection');
 	});
 // question 4
 	//color
 	//value
 	$('#Bq4s').click(function(){ 
-	$('#Bq4s').css({border:'1px solid #323232'});
-	$('#Bq4a').css({border:'1px solid #fff'});
-	$('#Bq4l').css({border:'1px solid #fff'});
-	Bq4=1;
+	$('#Bq4s').css({border:'2px solid #3339'});
+	$('#Bq4a').css({border:'2px solid #fff'});
+	$('#Bq4l').css({border:'2px solid #fff'});
+	Bq4=$(this).data('selection');
 	});
 	$('#Bq4a').click(function(){ 
-	$('#Bq4a').css({border:'1px solid #323232'});
-	$('#Bq4s').css({border:'1px solid #fff'});
-	$('#Bq4l').css({border:'1px solid #fff'});
-	Bq4=2;
+	$('#Bq4a').css({border:'2px solid #3339'});
+	$('#Bq4s').css({border:'2px solid #fff'});
+	$('#Bq4l').css({border:'2px solid #fff'});
+	Bq4=$(this).data('selection');
 	});
 	$('#Bq4l').click(function(){ 
-	$('#Bq4l').css({border:'1px solid #323232'});
-	$('#Bq4a').css({border:'1px solid #fff'});
-	$('#Bq4s').css({border:'1px solid #fff'});
-	Bq4=3;
+	$('#Bq4l').css({border:'2px solid #3339'});
+	$('#Bq4a').css({border:'2px solid #fff'});
+	$('#Bq4s').css({border:'2px solid #fff'});
+	Bq4=$(this).data('selection');
 	});
 // question 5
 	//color
 	//value
 	$('#Bq5s').click(function(){ 
-	$('#Bq5s').css({border:'1px solid #323232'});
-	$('#Bq5a').css({border:'1px solid #fff'});
-	$('#Bq5l').css({border:'1px solid #fff'});
-	Bq5=1;
+	$('#Bq5s').css({border:'2px solid #3339'});
+	$('#Bq5a').css({border:'2px solid #fff'});
+	$('#Bq5l').css({border:'2px solid #fff'});
+	Bq5=$(this).data('selection');
 	});
 	$('#Bq5a').click(function(){ 
-	$('#Bq5a').css({border:'1px solid #323232'});
-	$('#Bq5s').css({border:'1px solid #fff'});
-	$('#Bq5l').css({border:'1px solid #fff'});
-	Bq5=2;
+	$('#Bq5a').css({border:'2px solid #3339'});
+	$('#Bq5s').css({border:'2px solid #fff'});
+	$('#Bq5l').css({border:'2px solid #fff'});
+	Bq5=$(this).data('selection');
 	});
 	$('#Bq5l').click(function(){ 
-	$('#Bq5l').css({border:'1px solid #323232'});
-	$('#Bq5a').css({border:'1px solid #fff'});
-	$('#Bq5s').css({border:'1px solid #fff'});
-	Bq5=3;
+	$('#Bq5l').css({border:'2px solid #3339'});
+	$('#Bq5a').css({border:'2px solid #fff'});
+	$('#Bq5s').css({border:'2px solid #fff'});
+	Bq5=$(this).data('selection');
 	});
 // question 6
 	//color
 	//value
 	$('#Bq6s').click(function(){ 
-	$('#Bq6s').css({border:'1px solid #323232'});
-	$('#Bq6a').css({border:'1px solid #fff'});
-	$('#Bq6l').css({border:'1px solid #fff'});
-	Bq6=1;
+	$('#Bq6s').css({border:'2px solid #3339'});
+	$('#Bq6a').css({border:'2px solid #fff'});
+	$('#Bq6l').css({border:'2px solid #fff'});
+	Bq6=$(this).data('selection');
+	});
+	$('#Bq6ns').click(function(){ 
+		$('#Bq6ns').css({border:'2px solid #3339'});
+		$('#Bq6a').css({border:'2px solid #fff'});
+		$('#Bq6s').css({border:'2px solid #fff'});
+		$('#Bq6l').css({border:'2px solid #fff'});
+		Bq6=$(this).data('selection');
 	});
 	$('#Bq6a').click(function(){ 
-	$('#Bq6a').css({border:'1px solid #323232'});
-	$('#Bq6s').css({border:'1px solid #fff'});
-	$('#Bq6l').css({border:'1px solid #fff'});
-	Bq6=2;
+	$('#Bq6a').css({border:'2px solid #3339'});
+	$('#Bq6s').css({border:'2px solid #fff'});
+	$('#Bq6l').css({border:'2px solid #fff'});
+	Bq6=$(this).data('selection');
 	});
 }
 //----------------------------------------------------------------------end of form for 2 people-----------------------------------------------------------------------------------------------------------------------
@@ -526,13 +597,12 @@ if(0<q1 && 0<q2 && 0<q3 && 0<q4 && 0<q5){
 			$('#result_pod').show();
 			$('#test_pod').hide();
 			$('#result_pod').html(data.response);
-			$(document).on('click', '#signup_submit', function(){$("#signup_form").hide("slow");
+			$(document).on('click', '#signup_submit', function(){
+				$("#signup_form").hide("slow");
 				$("#actual_results").show("slow");});
-			
-				
-				$("input#mc-embedded-subscribe").click( function(){ 
-					$("#signup_submit").css({display:'block'});
-					});
+			$("input#mc-embedded-subscribe").click( function(){ 
+				$("#signup_submit").css({display:'block'});
+			});
 		},
 		//dataType:"JSON",
 		data:{ans1:ans,user_data_s_r1:a,bans1:q6},

@@ -11,18 +11,21 @@ function amoresurvey(){
 			background:#fff9;
 		}
 		#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-		body .sbody span, .container .sbody span{border:0px;}
+		.container .sbody span{border:0px;}
 		#mc_embed_signup_scroll{
-				background: #fff9;
-				padding: 20px;
-				width: 90%;
-			}
+			background: #fff9;
+			padding: 20px;
+			width: 90%;
+			margin-top: 50px;
+		}
 		#signup_submit{
-				background: #333;
-				color: #fff;
-				border: 0px;
-				padding: 10px 20px;
-				border-radius: 30px;
+			background: #fff;
+			color: #333;
+			border: 0px;
+			padding: 10px 20px;
+			border-radius: 30px !important;
+			border: 0px !important;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 		.a_results{
 				background: #fff9;
@@ -113,7 +116,7 @@ function amoresurvey(){
 			<!--End mc_embed_signup-->
 					
 					</div>
-					<div id="actual_results" style="display:none;padding:30% 5%;"><br><br>
+					<div id="actual_results" style="display:none;padding:10% 5%;"><br><br>
 					<div class="a_results">
 					<h5>Thank you for completing our survey.<br><br>Our recommendation would be to purchase an</h5><br>';
 

@@ -22,8 +22,8 @@
 	}
 	.td_area{
 		padding: 20px;
-		background: #fff6;
-		border-radius: 5px;
+		background: #ffffffd1;
+		border-radius: 0px;
 	}
 	a{
 		color:gray;
@@ -56,6 +56,7 @@
 		margin-top: 30px;
 		width: 60%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		cursor: pointer;
 	}
 	.2person, .1person{
 		min-height:90%;
@@ -68,12 +69,12 @@
 	.personid td{
 
 		font-size: 16px;
-		background-color: #fff;
-		color: #323232;
+		background-color: #04bb04;
+		color: #fff;
 		padding: 10px 20px;
 		margin-right: 20px;
 		border: 0px solid #c5c5d8;
-		border-radius: 5px;
+		border-radius: 0px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 	}
@@ -81,9 +82,9 @@
 		padding-top:5px;
 	}
 	#ppselector{
-		background: #fff9;
+		background: #fff;
 		color: #323232;
-		border-radius: 30px;
+		border-radius: 0px;
 		padding: 15px 20px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		width: 80%;
@@ -134,31 +135,31 @@
 	}
 
 	#p1, #p2, #pns{
-		border-radius:30px;
+		border-radius: 0px;
 		margin-left: 10px;
 	}
 
 	@media screen and (max-width: 500px) {
 		.persondef{
-		float:left;
-		font-weight:bold;
-		color:#323232;
-		padding-bottom: 20px;
+			float:left;
+			font-weight:bold;
+			color:#323232;
+			padding-bottom: 20px;
 		}
 		.personhiphen{
-		float:left;
-		padding:0px 3px;
+			float:left;
+			padding:0px 3px;
 		}
 		.sbody{
-		max-width:900px;
-		background:url('wp-content/plugins/amoresurvey/88681.png');
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		padding-left:30px;
-		padding-right:20px;
-		padding-bottom:20px;
-		padding-left: 20px;
-		padding-right: 20px;
+			max-width:900px;
+			background:url('wp-content/plugins/amoresurvey/88681.png');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			padding-left:30px;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 		.person{
 			float: left;
@@ -188,6 +189,7 @@
 			padding:5% 30% !important;
 		}
 	}
+
 </style>
 <center>
 
@@ -234,7 +236,7 @@
 					<tr>
 						<td class="td_area"  id="q1"> 
 							I typically like my mattress to be:<br>
-							<div id="q1e"></div>
+							<div id="q1e" class="error_message"></div>
 							<div class="answer_span">
 								<span class="b_span" id="q1s" data-selection="2">Soft</span>
 								<span class="b_span" id="q1m" data-selection="4">Medium</span>
@@ -247,7 +249,8 @@
 					</tr>
 					<tr>
 						<td class="td_area" id="q2">
-							My preferred sleeping position is:<br><div id="q2e"></div>
+							My preferred sleeping position is:<br>
+							<div id="q2e" class="error_message"></div>
 							<div class="answer_span">
 								<span class="b_span" id="q2si" data-selection="1">Side</span>
 								<span class="b_span" id="q2b" data-selection="2">Back / Back &amp; Side</span>
@@ -258,7 +261,8 @@
 					</tr>
 					<tr>
 						<td class="td_area" id="q3">
-							My body frame type is:<br><div id="q3e"></div>
+							My body frame type is:<br>
+							<div id="q3e" class="error_message"></div>
 							<div class="answer_span">
 								<span class="b_span" id="q3s" data-selection="1">Small</span>
 								<span class="b_span" id="q3a" data-selection="2">Average</span>
@@ -268,17 +272,19 @@
 					</tr>
 					<tr>
 						<td class="td_area" id="q4">
-							My age is:<br><div id="q4e"></div>
+							My age is:<br>
+							<div id="q4e" class="error_message"></div>
 							<div class="answer_span">
 								<span class="b_span" id="q4s" data-selection="1">Up to 30</span>
-								<span class="b_span"  id="q4a" data-selection="2">31-55</span>
-								<span class="b_span"  id="q4l" data-selection="3">56+</span>
+								<span class="b_span"  id="q4a" data-selection="2">31-50</span>
+								<span class="b_span"  id="q4l" data-selection="3">50+</span>
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<td class="td_area" id="q5">
-							I suffer from back / joint pain:<br><div id="q5e"></div>
+							I suffer from back / joint pain:<br>
+							<div id="q5e" class="error_message"></div>
 							<div class="answer_span">
 								<span class="b_span" id="q5s" data-selection="0">Never</span>
 								<span class="b_span" id="q5a" data-selection="0">Sometimes</span>
@@ -288,14 +294,15 @@
 					</tr>
 					<tr>
 						<td class="td_area" id="q6">
-						I prefer a 2-sided mattress:<br><div id="q6e"></div>
+						I prefer a 2-sided mattress:<br>
+						<div id="q6e" class="error_message"></div>
 							<div class="answer_span">
-								<span class="b_span" id="q6s">Yes</span>
-								<span class="b_span" id="q6ns">Not Sure</span>
-								<span class="b_span"  id="q6a">No</span>
+								<span class="b_span" id="q6s" data-selection="0">Yes</span>
+								<span class="b_span" id="q6ns" data-selection="0">Not Sure</span>
+								<span class="b_span"  id="q6a" data-selection="0">No</span>
 							</div>
 						</td>
-					</tr>
+					</tr>					
 				</table>
 			</div>
 
@@ -308,8 +315,10 @@
 						<tr>
 							<td class="td_area"  id="Aq1">
 
-								<div class="persondef">Left Person</div> <div class="personhiphen"> - </div> I typically like my mattress to be:<div id="Aq1e"></div>
+								<div class="persondef">Left Person</div> <div class="personhiphen"> - </div> 
+								I typically like my mattress to be:
 
+								<div id="Aq1e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Aq1s" data-selection="2">Soft</span>
 									<span class="b_span"  id="Aq1m" data-selection="4">Medium</span>
@@ -323,7 +332,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Aq2">
-								My preferred sleeping position is:<br><div id="Aq2e"></div>
+								My preferred sleeping position is:<br>
+								<div id="Aq2e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Aq2si" data-selection="1">Side</span>
 									<span class="b_span" id="Aq2b" data-selection="2">Back / Back &amp; Side</span>
@@ -336,7 +346,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Aq3">
-								My body frame type is:<br><div id="Aq3e"></div>
+								My body frame type is:<br>
+								<div id="Aq3e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Aq3s"data-selection="1">Small</span>
 									<span class="b_span"  id="Aq3a" data-selection="2">Average</span>
@@ -346,7 +357,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Aq4">
-								My age is:<br><div id="Aq4e"></div>
+								My age is:<br>
+								<div id="Aq4e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Aq4s" data-selection="1">Up to 30</span>
 									<span class="b_span"  id="Aq4a" data-selection="2">31-50</span>
@@ -356,7 +368,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Aq5">
-								I suffer from back / joint pain:<br><div id="Aq5e"></div>
+								I suffer from back / joint pain:<br>
+								<div id="Aq5e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Aq5s" data-selection="0">Never</span>
 									<span class="b_span" id="Aq5a" data-selection="0">Sometimes</span>
@@ -367,11 +380,12 @@
 
 						<tr>
 							<td class="td_area" id="Aq6">
-								I prefer a 2-sided mattress:<br><div id="Aq6e"></div>
+								I prefer a 2-sided mattress:<br>
+								<div id="Aq6e" class="error_message"></div>
 								<div class="answer_span">
-									<span class="b_span" id="Aq6s">Yes</span>
-									<span class="b_span" id="Aq6ns">Not Sure</span>
-									<span class="b_span"  id="Aq6a">No</span>
+									<span class="b_span" id="Aq6s" data-selection="0">Yes</span>
+									<span class="b_span" id="Aq6ns" data-selection="0">Not Sure</span>
+									<span class="b_span"  id="Aq6a" data-selection="0">No</span>
 								</div>
 							</td>
 						</tr>
@@ -387,7 +401,8 @@
 								<div style="">
 									<div class="persondef">Right Person</div>
 									<div class="personhiphen">-</div> 
-									I typically like my mattress to be:<div id="Bq1e"></div>
+									I typically like my mattress to be:
+									<div id="Bq1e" class="error_message"></div>
 								</div>
 								<div class="answer_span">
 									<span class="b_span" id="Bq1s" data-selection="2">Soft</span>
@@ -401,7 +416,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Bq2">
-								My preferred sleeping position is:<br><div id="Bq2e"></div>
+								My preferred sleeping position is:<br>
+								<div id="Bq2e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Bq2si" data-selection="1">Side</span>
 									<span class="b_span" id="Bq2b" data-selection="2">Back / Back & Side</span>
@@ -415,7 +431,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Bq3">
-								My body frame type is:<br><div id="Bq3e"></div>
+								My body frame type is:<br>
+								<div id="Bq3e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Bq3s" data-selection="1">Small</span>
 									<span class="b_span" id="Bq3a" data-selection="2">Average</span>
@@ -425,7 +442,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Bq4">
-								My age is:<br><div id="Bq4e"></div>
+								My age is:<br>
+								<div id="Bq4e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Bq4s" data-selection="1">Up to 30</span>
 									<span class="b_span" id="Bq4a" data-selection="2">31-50</span>
@@ -435,7 +453,8 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Bq5">
-								I suffer from back / joint pain:<br><div id="Bq5e"></div>
+								I suffer from back / joint pain:<br>
+								<div id="Bq5e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="Bq5s" data-selection="0">Never</span>
 									<span class="b_span" id="Bq5a" data-selection="0">Sometimes</span>
@@ -445,17 +464,35 @@
 						</tr>
 						<tr>
 							<td class="td_area" id="Bq6">
-							I prefer a 2-sided mattress:<br><div id="Bq6e"></div>
+							I prefer a 2-sided mattress:<br>
+							<div id="Bq6e" class="error_message"></div>
 								<div class="answer_span">
-									<span class="b_span" id="Bq6s">Yes</span>
-									<span class="b_span" id="Bq6ns">Not Sure</span>
-									<span class="b_span"  id="Bq6a">No</span>
+									<span class="b_span" id="Bq6s" data-selection="0">Yes</span>
+									<span class="b_span" id="Bq6ns" data-selection="0">Not Sure</span>
+									<span class="b_span"  id="Bq6a" data-selection="0">No</span>
 								</div>
 							</td>
 						</tr>
 					</table>
 				</div>
 			</div>
+
+			<div class="want_a_link">
+				<table>
+					<tr>
+						<td class="td_area" id="q8">
+							Would you recommend hyperlinking each mattress suggestion to it's respective product page?<br>
+							<div id="q8e" class="error_message"></div>
+								<div class="answer_span">
+									<span class="b_span" id="q8y" data-selection="yes">Yes</span>
+									<span class="b_span" id="q8ns" data-selection="not_sure" >Not Sure</span>
+									<span class="b_span" id="q8n" data-selection="no" >No</span>
+								</div>
+							</td>
+					</tr>
+				</table>	
+			</div>
+
 		</div><br>
 
 		<div id="result_pod"></div>

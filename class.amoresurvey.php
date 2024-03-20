@@ -118,9 +118,8 @@ function amoresurvey(){
 					</div>
 					<div id="actual_results" style="display:none;padding:10% 5%;"><br><br>
 					<div class="a_results">
-					<h5>Thank you for completing our survey.<br><br>Our recommendation would be to purchase an</h5><br>';
-
-			$finalanswer .='
+					<h5>Thank you for completing our survey.<br><br>Our recommendation would be to purchase a</h5><br>
+					
 			<table class="custom_table_two">
 				<tr style="height:;padding:5px;">
 					<td class="td_custom_table_two"><h5 style="color: yellow; margin:0px;">(Left side)</h5></td>
@@ -135,16 +134,7 @@ function amoresurvey(){
 						background: #fff2;
 						padding: 15px;
 						margin: 10px;
-						border-radius: 10px;">Amore  '.$_POST["ans1"].'<br>';
-									
-							if($_POST["Aans1"]==1){
-								$finalanswer.='With Copper';
-							}
-							else{
-								$finalanswer.='With Copper';
-							}
-									
-							$finalanswer .= '
+						border-radius: 10px;">  '.$_POST["ans1"].'<br>
 							</div>
 						</div>
 					</td>
@@ -156,14 +146,9 @@ function amoresurvey(){
 						background: #fff2;
 						padding: 15px;
 						margin: 10px;
-						border-radius: 10px;">Amore '.$_POST["ans2"].' <br>';
-						if($_POST["Bans1"]==1){
-							$finalanswer.='With Copper';
-						}
-						else{
-							$finalanswer.='With Copper';
-						}
-								$finalanswer.='</div></div>
+						border-radius: 10px;"> '.$_POST["ans2"].' <br>'.'
+						</div>
+						</div>
 					</td>
 				</tr>
 			</table>';
@@ -235,18 +220,9 @@ function amoresurvey(){
 			<div id="actual_results" style="display:none;padding:30% 5%;">
 				<div class="a_results" style=""><br><br>
 					<h5>
-						Thank you for completing our survey.<br><br>Our recommendation would be to purchase an<br> <div style="height:;padding:5px;">
+						Thank you for completing our survey.<br><br>Our recommendation would be to purchase a<br> <div style="height:;padding:5px;">
 
-						<div class="a_results_details" style=""> Amore '.$_POST["ans1"];
-						
-						if($_POST["bans1"]==1){
-							$finalanswer.='With Copper';
-						}
-						else{ 
-							$finalanswer.=' Without Copper'; 
-						}
-						
-						$finalanswer.=' </div><div> 
+						<div class="a_results_details" style=""> '.$_POST["ans1"].' </div><div> 
 						
 					</h5>
 			</div>';

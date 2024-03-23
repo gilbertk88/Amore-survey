@@ -39,6 +39,12 @@ function amoresurvey(){
 				border-radius: 10px;
 				font-size: 20px;
 		}
+		.a_results_details > a {
+			color: yellow;
+		}
+		h5 > .gil_recommend_link{
+			color: yellow;
+		}
 		td .td_custom_table_two{
 			color: yellow;
 			padding: 0px 15px;
@@ -134,7 +140,7 @@ function amoresurvey(){
 						background: #fff2;
 						padding: 15px;
 						margin: 10px;
-						border-radius: 10px;">  '.$_POST["ans1"].'<br>
+						border-radius: 10px;">  '.stripslashes($_POST["ans1"]).'<br>
 							</div>
 						</div>
 					</td>
@@ -146,7 +152,7 @@ function amoresurvey(){
 						background: #fff2;
 						padding: 15px;
 						margin: 10px;
-						border-radius: 10px;"> '.$_POST["ans2"].' <br>'.'
+						border-radius: 10px;"> '.stripslashes($_POST["ans2"]).' <br>'.'
 						</div>
 						</div>
 					</td>
@@ -222,7 +228,7 @@ function amoresurvey(){
 					<h5>
 						Thank you for completing our survey.<br><br>Our recommendation would be to purchase a<br> <div style="height:;padding:5px;">
 
-						<div class="a_results_details" style=""> '.$_POST["ans1"].' </div><div> 
+						<div class="a_results_details" style=""> '.stripslashes($_POST["ans1"]).' </div><div> 
 						
 					</h5>
 			</div>';

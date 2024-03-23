@@ -5,7 +5,7 @@
 	Plugin URI: 
 	Description: Allows Amorebeds to conduct a mattress surveys.
 	Author: Todd Summerville
-	Version: 1.0.1
+	Version: 1.0.4
 	Author URI: https://www.amorebeds.com/
 
 */

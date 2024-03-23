@@ -139,6 +139,10 @@
 		margin-left: 10px;
 	}
 
+	.want_a_link_table{
+		width: 100%;
+	}
+
 	@media screen and (max-width: 500px) {
 		.persondef{
 			float:left;
@@ -291,18 +295,7 @@
 								<span class="b_span" id="q5l" data-selection="0">Often</span>
 							</div>
 						</td>
-					</tr>
-					<tr>
-						<td class="td_area" id="q6">
-						I prefer a 2-sided mattress:<br>
-						<div id="q6e" class="error_message"></div>
-							<div class="answer_span">
-								<span class="b_span" id="q6s" data-selection="0">Yes</span>
-								<span class="b_span" id="q6ns" data-selection="0">Not Sure</span>
-								<span class="b_span"  id="q6a" data-selection="0">No</span>
-							</div>
-						</td>
-					</tr>					
+					</tr>			
 				</table>
 			</div>
 
@@ -339,7 +332,7 @@
 									<span class="b_span" id="Aq2b" data-selection="2">Back / Back &amp; Side</span>
 									<span class="b_span" id="Aq2s" data-selection="3">Back &amp; Stomach</span>
 									<div id="padda">
-										<span class="b_span" data-selection="3">All Over the Place</span>
+										<span id="Aq2null" class="b_span" data-selection="3">All Over the Place</span>
 									</div>
 								</div>
 							</td>
@@ -374,18 +367,6 @@
 									<span class="b_span" id="Aq5s" data-selection="0">Never</span>
 									<span class="b_span" id="Aq5a" data-selection="0">Sometimes</span>
 									<span class="b_span" id="Aq5l" data-selection="0">Often</span>
-								</div>
-							</td>
-						</tr>
-
-						<tr>
-							<td class="td_area" id="Aq6">
-								I prefer a 2-sided mattress:<br>
-								<div id="Aq6e" class="error_message"></div>
-								<div class="answer_span">
-									<span class="b_span" id="Aq6s" data-selection="0">Yes</span>
-									<span class="b_span" id="Aq6ns" data-selection="0">Not Sure</span>
-									<span class="b_span"  id="Aq6a" data-selection="0">No</span>
 								</div>
 							</td>
 						</tr>
@@ -462,26 +443,15 @@
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<td class="td_area" id="Bq6">
-							I prefer a 2-sided mattress:<br>
-							<div id="Bq6e" class="error_message"></div>
-								<div class="answer_span">
-									<span class="b_span" id="Bq6s" data-selection="0">Yes</span>
-									<span class="b_span" id="Bq6ns" data-selection="0">Not Sure</span>
-									<span class="b_span"  id="Bq6a" data-selection="0">No</span>
-								</div>
-							</td>
-						</tr>
 					</table>
 				</div>
 			</div>
 
 			<div class="want_a_link">
-				<table>
+				<table class="want_a_link_table">
 					<tr>
 						<td class="td_area" id="q8">
-							Would you recommend hyperlinking each mattress suggestion to it's respective product page?<br>
+						I prefer a 2-sided mattress?<br>
 							<div id="q8e" class="error_message"></div>
 								<div class="answer_span">
 									<span class="b_span" id="q8y" data-selection="yes">Yes</span>

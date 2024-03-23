@@ -7,21 +7,18 @@ jQuery( function ( $ ) {
 		var q3 = 'x' ;
 		var q4 = 'x' ;
 		var q5 = 'x' ;
-		var q6 = 'x' ;
 
 		var Aq1 = 'x';
 		var Aq2 = 'x';
 		var Aq3 = 'x';
 		var Aq4 = 'x';
 		var Aq5 = 'x';
-		var Aq6 = 'x';
 
 		var Bq1 = 'x';
 		var Bq2 = 'x';
 		var Bq3 = 'x';
 		var Bq4 = 'x';
 		var Bq5 = 'x';
-		var Bq6 = 'x';
 
 		var Bq8 = 'x';
 	}
@@ -30,11 +27,11 @@ jQuery( function ( $ ) {
 
 	function survey_switcher(){
 		
-		q1 = q2 = q3 = q4 = q5 = q6 = 'x' ;
+		q1 = q2 = q3 = q4 = q5 = 'x' ;
 
-		Aq1 = Aq2 = Aq3 = Aq4 = Aq5 = Aq6 = 'x';
+		Aq1 = Aq2 = Aq3 = Aq4 = Aq5 = 'x';
 
-		Bq1 = Bq2 = Bq3 = Bq4 = Bq5 = Bq6 = Bq8 = 'x'; 
+		Bq1 = Bq2 = Bq3 = Bq4 = Bq5 = Bq8 = 'x'; 
 
 		$('.b_span').css({"border":"1px solid #fff9"});
 
@@ -254,31 +251,6 @@ jQuery( function ( $ ) {
 			q5=$(this).data('selection');
 		});
 
-	// question 6
-		//color
-		//value
-		$('#q6s').click(function(){ 
-			$('#q6s').css({border:'2px solid #04bb04'});
-			$('#q6a').css({border:'2px solid #fff'});
-			$('#q6l').css({border:'2px solid #fff'});
-			$('#q6ns').css({border:'2px solid #fff9'});
-			q6=$(this).data('selection');
-		});
-		$('#q6ns').click(function(){ 
-			$('#q6ns').css({border:'2px solid #04bb04'});
-			$('#q6a').css({border:'2px solid #fff9'});
-			$('#q6l').css({border:'2px solid #fff9'});
-			$('#q6s').css({border:'2px solid #fff9'});
-			q6=$(this).data('selection');
-		});
-		$('#q6a').click(function(){ 
-			$('#q6a').css({border:'2px solid #04bb04'});
-			$('#q6s').css({border:'2px solid #fff'});
-			$('#q6l').css({border:'2px solid #fff'});
-			$('#q6ns').css({border:'2px solid #fff9'});
-			q6=$(this).data('selection');
-		});
-
 	}
 
 	//----------------------------------------------------------------------end of form for 1 person-----------------------------------------------------------------------------------------------------------------------
@@ -337,6 +309,7 @@ jQuery( function ( $ ) {
 			$('#Aq2s').css({border:'2px solid #fff'});
 			$('#Aq2si').css({border:'2px solid #fff'});
 			$('#Aq2a').css({border:'2px solid #fff'});
+			$('#Aq2null').css({border:'2px solid #fff'});
 			Aq2=$(this).data('selection');
 		});	
 		$('#Aq2s').click(function(){ 
@@ -344,6 +317,7 @@ jQuery( function ( $ ) {
 			$('#Aq2b').css({border:'2px solid #fff'});
 			$('#Aq2si').css({border:'2px solid #fff'});
 			$('#Aq2a').css({border:'2px solid #fff'});
+			$('#Aq2null').css({border:'2px solid #fff'});
 			Aq2=$(this).data('selection');
 		});
 		$('#Aq2si').click(function(){ 
@@ -351,6 +325,7 @@ jQuery( function ( $ ) {
 			$('#Aq2s').css({border:'2px solid #fff'});
 			$('#Aq2b').css({border:'2px solid #fff'});
 			$('#Aq2a').css({border:'2px solid #fff'});
+			$('#Aq2null').css({border:'2px solid #fff'});
 			Aq2=$(this).data('selection');
 		});
 		$('#Aq2a').click(function(){
@@ -358,8 +333,20 @@ jQuery( function ( $ ) {
 			$('#Aq2s').css({border:'2px solid #fff'});
 			$('#Aq2si').css({border:'2px solid #fff'});
 			$('#Aq2b').css({border:'2px solid #fff'});
+			$('#Aq2null').css({border:'2px solid #fff'});
 			Aq2=$(this).data('selection');
 		});
+
+		$('#Aq2null').click(function(){
+			$('#Aq2null').css({border:'2px solid #04bb04'});
+			$('#Aq2b').css({border:'2px solid #fff'});
+			$('#Aq2s').css({border:'2px solid #fff'});
+			$('#Aq2si').css({border:'2px solid #fff'});
+			$('#Aq2a').css({border:'2px solid #fff'});
+			Aq2=$(this).data('selection');
+		});	
+
+		
 		
 	// question 3
 		//color
@@ -433,40 +420,7 @@ jQuery( function ( $ ) {
 			$('#Aq5a').css({border:'2px solid #fff'});
 			$('#Aq5s').css({border:'2px solid #fff'});
 			Aq5=$(this).data('selection');
-		});
-
-	// question 6
-		//color
-		//value
-		$('#Aq6s').click(function(){
-
-			$('#Aq6s').css({border:'2px solid #04bb04'});
-			$('#Aq6a').css({border:'2px solid #fff'});
-			$('#Aq6l').css({border:'2px solid #fff'});
-			$('#Aq6ns').css({border:'2px solid #fff'});
-			Aq6=$(this).data('selection');
-
-		});
-		$('#Aq6a').click(function(){ 
-
-			$('#Aq6a').css({border:'2px solid #04bb04'});
-			$('#Aq6s').css({border:'2px solid #fff'});
-			$('#Aq6l').css({border:'2px solid #fff'});
-			$('#Aq6ns').css({border:'2px solid #fff'});
-			Aq6=$(this).data('selection');
-
-		});
-
-		$('#Aq6ns').click(function(){ 
-
-			$('#Aq6ns').css({border:'2px solid #04bb04'});
-			$('#Aq6a').css({border:'2px solid #fff'});
-			$('#Aq6s').css({border:'2px solid #fff'});
-			$('#Aq6l').css({border:'2px solid #fff'});
-			Aq6=$(this).data('selection');
-
-		});
-		
+		});		
 		
 	//---------------------------------------------------------------------section B (person 2/ right side)-----------------------------------------------------------------------------------------------------------------
 	// question 1
@@ -595,29 +549,6 @@ jQuery( function ( $ ) {
 			Bq5=$(this).data('selection');
 		});
 
-	// question 6
-		//color
-		//value
-		$('#Bq6s').click(function(){ 
-			$('#Bq6s').css({border:'2px solid #04bb04'});
-			$('#Bq6a').css({border:'2px solid #fff'});
-			$('#Bq6l').css({border:'2px solid #fff'});
-			Bq6=$(this).data('selection');
-		});
-		$('#Bq6ns').click(function(){ 
-			$('#Bq6ns').css({border:'2px solid #04bb04'});
-			$('#Bq6a').css({border:'2px solid #fff'});
-			$('#Bq6s').css({border:'2px solid #fff'});
-			$('#Bq6l').css({border:'2px solid #fff'});
-			Bq6=$(this).data('selection');
-		});
-		$('#Bq6a').click(function(){ 
-			$('#Bq6a').css({border:'2px solid #04bb04'});
-			$('#Bq6s').css({border:'2px solid #fff'});
-			$('#Bq6l').css({border:'2px solid #fff'});
-			Bq6=$(this).data('selection');
-		});
-
 	// question 8
 		$("#q8y").click( function(){
 			
@@ -654,8 +585,26 @@ jQuery( function ( $ ) {
 	//----------------------------------------------------------------------end of form for 2 people-----------------------------------------------------------------------------------------------------------------------
 	function openpersonsubmit(){
 
+		console.log( 'q1' );
+		console.log( q1 );
+
+		console.log( 'q2' );
+		console.log( q2 );
+
+		console.log( 'q3' );
+		console.log( q3 );
+
+		console.log( 'q4' );
+		console.log( q4 );
+
+		console.log( 'q5' );
+		console.log( q5 );
+
+		console.log( 'Bq8' );
+		console.log( Bq8 );
+
 		//e.preventDefault();
-		if( q1 !== 'x' && 'x' !== q2 && 'x' !== q3 &&'x' !== q4 && 'x' !== q5 && 'x' !== q6 && 'x' !== Bq8 ){
+		if( q1 !== 'x' && 'x' !== q2 && 'x' !== q3 &&'x' !== q4 && 'x' !== q5 && 'x' !== Bq8 ){
 
 			// if all are set 
 			a = q1 + q2 + q3 + q4 + q5 ;
@@ -666,43 +615,43 @@ jQuery( function ( $ ) {
 			if( Bq8 == 'yes' ){
 				if( 0 < a && a <= 1.49 ){
 					//replace with the recommendation
-					ans='12" 2-Sided Copper Foam Flippable';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>';
 				} else if(1.5<=a && a<=2.24){
 					//replace with the recommendation
-					ans='2-Sided Luxury Hybrid Latex Lux Medium; <br>2-Sided Copper Hybrid Lux Med; <br>2-Sided Natural Hybrid Pillowtop';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Medium</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/luxury-pillows/">2-Sided Natural Hybrid Pillowtop</a>';
 				} else if(2.25<a && a<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans='2-Sided Luxury Hybrid Latex Lux Firm; <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				} else if(2.51<a && a<=3){ 
-					ans='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				}
 			}
 			if( Bq8 == 'no' ){
 				if( 0 < a && a <= 1.49 ){
 					//replace with the recommendation
-					ans='12" Hypbrid Foam/Coil SOFT;  <br>12" 2-Sided Copper Foam Flippable';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT;</a>  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable<a>';
 				} else if(1.5<=a && a<=2.24){
 					//replace with the recommendation
-					ans='12" Hybrid Foam/Coil Medium';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a> <br><a class="gil_recommend_link"  href="https://www.amorebeds.com/product/bed/">12" 2-Sided Copper Foam Flippable</a></br>;  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<a && a<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans='12" Hybrid Foam/Coil Medium';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a>';
 				} else if(2.51<a && a<=3){ 
-					ans='12" Hybrid Foam/Coil Firm';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>';
 				}
 			}
 			if( Bq8 == 'not_sure' ){
 				if( 0 < a && a <= 1.49 ){
 					//replace with the recommendation
-					ans='12" 2-Sided Copper Foam Flippable; <br>12" Hypbrid Foam/Coil SOFT';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT</a>';
 				} else if(1.5<=a && a<=2.24){
 					//replace with the recommendation
-					ans='2-Sided Hybrid Latex Lux Medium;  <br>2-Sided Copper Hybrid Lux Med;  <br>2-Sided Natural Hybrid Pillowtop;  <br>12" Hybrid Foam/Coil Medium';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Hybrid Latex Lux Medium</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Pillowtop</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<a && a<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original;  <br>12" Hybrid Foam/Coil Medium';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Copper Hybrid Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Original</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Firm</a>';
 				} else if(2.51<a && a<=3){ 
-					ans='12" Hybrid Foam/Coil Firm;  <br>2-Sided Luxury Hybrid Latex Lux Firm;  <br>1-Sided Natural Hybrid Original';
+					ans='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href=" https://www.amorebeds.com/product/amore-1-sided-natural-mattress/">1-Sided Natural Hybrid Original</a>';
 				}
 			}
 
@@ -742,7 +691,7 @@ jQuery( function ( $ ) {
 				},
 
 				//dataType:"JSON",
-				data:{ans1:ans,user_data_s_r1:a,bans1:q6},
+				data:{ans1:ans,user_data_s_r1:a,bans1:Bq8},
 				method:"POST",
 
 			} ) ;
@@ -776,11 +725,6 @@ jQuery( function ( $ ) {
 				$('#q5').css({border:'1px solid #ff0000a3', 'padding':'20px'});
 			}
 
-			if( q6=='x' ){
-				$('#q6e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
-				$('#q6').css({border:'1px solid #ff0000a3', 'padding':'20px'});
-			}
-
 			if( Bq8=='x' ){
 				$('#q8e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
 				$('#q8').css({border:'1px solid #ff0000a3', 'padding':'20px'});
@@ -806,106 +750,103 @@ jQuery( function ( $ ) {
 
 	function twopeoplesubmit(){
 
-		console.log('Bq8')
-		console.log(Bq8);
-
 		$('#submit_mailchip_details').on('click',function(){
 			$('.survey_results').show();
 			$('.survey_mailchimp').hide();
 		});
 
 		//event.preventDefault();
-		if( 'x' !== Aq1 && 'x' !== Aq2 && 'x' !== Aq3 && 'x' !== Aq4 && 'x' !== Aq5 && 'x' !== Aq6 && 'x' !== Bq1 && 'x' !== Bq2 && 'x' !== Bq3 && 'x' !== Bq4 && 'x' !== Bq5 && 'x' !== Bq6 && 'x' !== Bq8 ){
+		if( 'x' !== Aq1 && 'x' !== Aq2 && 'x' !== Aq3 && 'x' !== Aq4 && 'x' !== Aq5 && 'x' !== Bq1 && 'x' !== Bq2 && 'x' !== Bq3 && 'x' !== Bq4 && 'x' !== Bq5 && 'x' !== Bq8 ){
 			// if all are set 
 			Aa = Aq1 + Aq2 + Aq3 + Aq4 + Aq5 ;
 			Ba = Bq1 + Bq2 + Bq3 + Bq4 + Bq5 ;
 
 			Aa = Aa/5;
 			Ba = Ba/5;
-
+			
 			if( Bq8 == 'yes' ){
 				if( 0 < Aa && Aa <= 1.49 ){
 					//replace with the recommendation
-					ans1='12" 2-Sided Copper Foam Flippable';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>';
 				} else if(1.5<=Aa && Aa<=2.24){
 					//replace with the recommendation
-					ans1='2-Sided Luxury Hybrid Latex Lux Medium; <br>2-Sided Copper Hybrid Lux Med; <br>2-Sided Natural Hybrid Pillowtop';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Medium</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/luxury-pillows/">2-Sided Natural Hybrid Pillowtop</a>';
 				} else if(2.25<Aa && Aa<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans1='2-Sided Luxury Hybrid Latex Lux Firm; <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Firm</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				} else if(2.51<Aa && Aa<=3){ 
-					ans1='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				}
 			}
 			if( Bq8 == 'no' ){
 				if( 0 < Aa && Aa <= 1.49 ){
 					//replace with the recommendation
-					ans1='12" Hypbrid Foam/Coil SOFT;  <br>12" 2-Sided Copper Foam Flippable';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT;</a>  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable<a>';
 				} else if(1.5<=Aa && Aa<=2.24){
 					//replace with the recommendation
-					ans1='12" Hybrid Foam/Coil Medium';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a> <br><a class="gil_recommend_link"  href="https://www.amorebeds.com/product/bed/">12" 2-Sided Copper Foam Flippable</a></br>;  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<Aa && Aa<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans1='12" Hybrid Foam/Coil Medium';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a>';
 				} else if(2.51<Aa && Aa<=3){ 
-					ans1='12" Hybrid Foam/Coil Firm';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>';
 				}
 			}
 			if( Bq8 == 'not_sure' ){
 				if( 0 < Aa && Aa <= 1.49 ){
 					//replace with the recommendation
-					ans1='12" 2-Sided Copper Foam Flippable; <br>12" Hypbrid Foam/Coil SOFT';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT</a>';
 				} else if(1.5<=Aa && Aa<=2.24){
 					//replace with the recommendation
-					ans1='2-Sided Hybrid Latex Lux Medium;  <br>2-Sided Copper Hybrid Lux Med;  <br>2-Sided Natural Hybrid Pillowtop;  <br>12" Hybrid Foam/Coil Medium';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Hybrid Latex Lux Medium</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Pillowtop</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a class="gil_recommend_link" class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<Aa && Aa<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans1='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original;  <br>12" Hybrid Foam/Coil Medium';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Copper Hybrid Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Original</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Firm</a>';
 				} else if(2.51<Aa && Aa<=3){ 
-					ans1='12" Hybrid Foam/Coil Firm;  <br>2-Sided Luxury Hybrid Latex Lux Firm;  <br>1-Sided Natural Hybrid Original';
+					ans1='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href=" https://www.amorebeds.com/product/amore-1-sided-natural-mattress/">1-Sided Natural Hybrid Original</a>';
 				}
 			}
-	
+			
 			if( Bq8 == 'yes' ){
 				if( 0 < Ba && Ba <= 1.49 ){
 					//replace with the recommendation
-					ans2='12" 2-Sided Copper Foam Flippable';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>';
 				} else if(1.5<=Ba && Ba<=2.24){
 					//replace with the recommendation
-					ans2='2-Sided Luxury Hybrid Latex Lux Medium; <br>2-Sided Copper Hybrid Lux Med; <br>2-Sided Natural Hybrid Pillowtop';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Medium</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/luxury-pillows/">2-Sided Natural Hybrid Pillowtop</a>';
 				} else if(2.25<Ba && Ba<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans2='2-Sided Luxury Hybrid Latex Lux Firm; <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Firm</a>;  <br>	<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				} else if(2.51<Ba && Ba<=3){ 
-					ans2='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Natural Hybrid Original';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-natural-mattress/">2-Sided Natural Hybrid Original</a>';
 				}
 			}
 			if( Bq8 == 'no' ){
 				if( 0 < Ba && Ba <= 1.49 ){
 					//replace with the recommendation
-					ans2='12" Hypbrid Foam/Coil SOFT;  <br>12" 2-Sided Copper Foam Flippable';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT;</a>  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable<a>';
 				} else if(1.5<=Ba && Ba<=2.24){
 					//replace with the recommendation
-					ans2='12" Hybrid Foam/Coil Medium';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a> <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" 2-Sided Copper Foam Flippable</a></br>;  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<Ba && Ba<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans2='12" Hybrid Foam/Coil Medium';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a>';
 				} else if(2.51<Ba && Ba<=3){ 
-					ans2='12" Hybrid Foam/Coil Firm';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>';
 				}
 			}
 			if( Bq8 == 'not_sure' ){
 				if( 0 < Ba && Ba <= 1.49 ){
 					//replace with the recommendation
-					ans2='12" 2-Sided Copper Foam Flippable; <br>12" Hypbrid Foam/Coil SOFT';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">12" 2-Sided Copper Foam Flippable</a>; <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hypbrid Foam/Coil SOFT</a>';
 				} else if(1.5<=Ba && Ba<=2.24){
 					//replace with the recommendation
-					ans2='2-Sided Hybrid Latex Lux Medium;  <br>2-Sided Copper Hybrid Lux Med;  <br>2-Sided Natural Hybrid Pillowtop;  <br>12" Hybrid Foam/Coil Medium';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Hybrid Latex Lux Medium</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-2-sided-hybrid-copper-flippable/">2-Sided Copper Hybrid Lux Med</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Pillowtop</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Med</a>';
 				} else if(2.25<Ba && Ba<=2.5){ // 2.25 - 2.5 = 
 					//replace with the recommendation
-					ans2='2-Sided Luxury Hybrid Latex Lux Firm;  <br>2-Sided Copper Hybrid Lux Firm;  <br>2-Sided Natural Hybrid Original;  <br>12" Hybrid Foam/Coil Medium';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Copper Hybrid Lux Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">2-Sided Natural Hybrid Original</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Medium</a><br>  <a href="https://www.amorebeds.com/product/bed/">Luxury 1-Sided Hybrid Firm</a>';
 				} else if(2.51<Ba && Ba<=3){ 
-					ans2='12" Hybrid Foam/Coil Firm;  <br>2-Sided Luxury Hybrid Latex Lux Firm;  <br>1-Sided Natural Hybrid Original';
+					ans2='<a class="gil_recommend_link" href="https://www.amorebeds.com/product/bed/">12" Hybrid Foam/Coil Firm</a>;  <br><a class="gil_recommend_link" href="https://www.amorebeds.com/product/amore-luxury-hybrid-2-sided-latex-mattress/">2-Sided Luxury Hybrid Latex Lux Firm</a>;  <br><a class="gil_recommend_link" href=" https://www.amorebeds.com/product/amore-1-sided-natural-mattress/">1-Sided Natural Hybrid Original</a>';
 				}
 			}
 
@@ -940,9 +881,9 @@ jQuery( function ( $ ) {
 				//dataType:"JSON",
 				data:{
 					user_data_s_r1:Aa,
-					ans1:ans1,Aans1:Aq6,
+					ans1:ans1,Aans1:Bq8,
 					user_data_s_r2:Ba,
-					ans2:ans2,Bans1:Bq6,
+					ans2:ans2,Bans1:Bq8,
 					},
 				method:"POST",	
 				});
@@ -977,11 +918,6 @@ jQuery( function ( $ ) {
 			$('#Aq5e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
 			$('#Aq5').css({border:'1px solid #ff0000a3', 'padding':'20px'});
 		}
-		
-		if(Aq6 == 'x'){
-			$('#Aq6e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
-			$('#Aq6').css({border:'1px solid #ff0000a3', 'padding':'20px'});
-		}
 
 		//==================From B 2 people===========================================================
 		if(Bq1 == 'x'){
@@ -1008,11 +944,6 @@ jQuery( function ( $ ) {
 		if(Bq5 == 'x'){
 		$('#Bq5e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
 		$('#Bq5').css({border:'1px solid #ff0000a3', 'padding':'20px'});
-		}
-
-		if(Bq6 == 'x'){
-		$('#Bq6e').html('<br><div style="color:#ff0000a3; font-size:14px;">Please select a value below</div>');
-		$('#Bq6').css({border:'1px solid #ff0000a3', 'padding':'20px'});
 		}
 		
 		if( Bq8=='x' ){
